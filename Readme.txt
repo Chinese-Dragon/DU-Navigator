@@ -7,7 +7,7 @@ The student will be able to load the app into their phone by taking a picture of
 where Visual Text Recognition software will parse it and store the data locally on the device.
 
 Team Members:
-Dr. Sigman - CEO of Σ(n)
+Dr. Sigman - Psuedo-CEO of Σ(n)
 Kurt Smith - Project Manager
 Barrett Cummins - Team Manager
 Mark Ma - Technical Leader
