@@ -1,5 +1,5 @@
-Core Navigator
-Description:
+﻿Core Navigator
+Description: 
 Software Engineering: Fall 2015
 Navigation based mobile application intended for use by new Drury students. 
 The app will have general information useful to new students and several features that will utilize the student's schedule. 
