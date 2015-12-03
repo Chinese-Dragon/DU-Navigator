@@ -9,15 +9,21 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import java.util.ArrayList;
+
 public class RouteActivity extends Activity implements AdapterView.OnItemSelectedListener{
 
     private Spinner spinner_day;
-    private String currentDay = "Monday";
-    private static final String[]paths = {"Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Sunday"};
+    private String currentDay = Course.MONDAY;
+    private final String[]paths = {Course.MONDAY, Course.TUESDAY, Course.WEDNESDAY, Course.THURSDAY, Course.FRIDAY, Course.SATURDAY, Course.SUNDAY};
 
     private Spinner spinner_schedule;
-    private String currentSchedule = "1";
-    private static final String[]schedules = {"1", "2", "3"};
+    private Schedule schedule1 = new Schedule("Schedule1");
+    private Schedule schedule2 = new Schedule("Schedule2");
+    private Schedule schedule3 = new Schedule("Schedule3");
+    private ArrayList<Schedule> scheduleList = new ArrayList<Schedule>();
+    private Schedule currentSchedule = schedule1;
+    private final String[]schedules = {schedule1.getName(), schedule2.getName(), schedule3.getName()};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,10 @@ public class RouteActivity extends Activity implements AdapterView.OnItemSelecte
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_schedule.setAdapter(adapter2);
         spinner_schedule.setOnItemSelectedListener(this);
+
+        scheduleList.add(schedule1);
+        scheduleList.add(schedule2);
+        scheduleList.add(schedule3);
     }
 
 
@@ -71,7 +81,7 @@ public class RouteActivity extends Activity implements AdapterView.OnItemSelecte
         }
 
         else if(parent.getId() == spinner_schedule.getId()){
-            currentSchedule = (String) parent.getItemAtPosition(position);
+            currentSchedule = scheduleList.get(position);
         }
     }
 
@@ -82,7 +92,7 @@ public class RouteActivity extends Activity implements AdapterView.OnItemSelecte
         return currentDay;
     }
 
-    public String getCurrentSchedule() {
+    public Schedule getCurrentSchedule() {
         return currentSchedule;
     }
 }
