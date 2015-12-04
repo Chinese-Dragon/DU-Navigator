@@ -1,0 +1,46 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/relative">
+        <Spinner
+            android:id="@+id/spinner_day"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/button_route"
+            android:layout_gravity="start|top"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/button_route"
+            android:text="ROUTE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onRoute"/>
+
+        <Spinner
+            android:id="@+id/spinner_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/button_route"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="387dp"
+    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>
