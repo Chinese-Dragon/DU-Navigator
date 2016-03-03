@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,36 +8,37 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-
     <fragment
-        class="com.google.android.gms.maps.SupportMapFragment"
         android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/fragment_drury_map" />
+        android:layout_height="match_parent" />
 
     <Spinner
         android:id="@+id/spinner_day"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/map"
         android:spinnerMode="dropdown"
-        android:gravity="bottom|left"/>
+        android:layout_marginLeft="40dp"/>
 
 
     <Button
         android:id="@+id/button_route"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ROUTE"
-        android:layout_below="@id/map"
+        android:layout_alignBottom="@id/map"
         android:layout_toRightOf="@id/spinner_day"
-        android:onClick="onRoute"/>
+        android:layout_centerHorizontal="true"
+        android:text="ROUTE" />
 
     <Spinner
         android:id="@+id/spinner_schedule"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:spinnerMode="dropdown"
-        android:gravity="bottom|right"/>
+        android:layout_alignBottom="@id/map"
+        android:layout_toRightOf="@id/button_route"
+        android:spinnerMode="dropdown"/>
+
 
 </RelativeLayout>

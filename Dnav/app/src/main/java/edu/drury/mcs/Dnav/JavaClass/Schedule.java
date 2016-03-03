@@ -55,7 +55,7 @@ public class Schedule implements Serializable{
      * @return - A list of courses that meet on the given day
      */
     public List<Course> getCourseOnDay(String day){
-        List<Course> dayCourses = new ArrayList<Course>();
+        List<Course> dayCourses = getCoursesSortedByTime();
         for(int i=0; i<courses.size(); i++){
             Course c = courses.get(i);
             if((c.getDays()).contains(day)) dayCourses.add(c);
@@ -79,6 +79,38 @@ public class Schedule implements Serializable{
             if(courses.get(i).getID().equals(id))
                 courses.remove(i);
         }
+    }
+
+    public List<Course> getCoursesSortedByTime(){
+        ArrayList<Course> sortedList = new ArrayList<Course>();
+
+        Course[] courseArray = courses.toArray(new Course[courses.size()]);
+
+        // B U B B L E  S O R T  B O Y S
+        for(int i = 0; i<courses.size(); i++)
+        {
+            String strTime = courses.get(i).getBeginTime();
+            Time curTime = new Time(strTime);
+            for(int j=i; j<courses.size(); j++)
+            {
+                String strCompTime = courses.get(j).getBeginTime();
+                Time compTime = new Time(strCompTime);
+                if(curTime.greaterThan(compTime)){
+                    Course curCourse = courses.get(i);
+                    Course compCourse = courses.get(j);
+
+                    courseArray[i] = compCourse;
+                    courseArray[j] = curCourse;
+                }
+            }
+        }
+
+        for(int i = 0; i<courseArray.length; i++)
+        {
+            sortedList.add(courseArray[i]);
+        }
+
+        return sortedList;
     }
 
     /**

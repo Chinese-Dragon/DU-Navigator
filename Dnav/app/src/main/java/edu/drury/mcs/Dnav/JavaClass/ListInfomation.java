@@ -6,5 +6,6 @@ package edu.drury.mcs.Dnav.JavaClass;
 public class ListInfomation {
 
     public String title;
+    public String ID;
 
 }

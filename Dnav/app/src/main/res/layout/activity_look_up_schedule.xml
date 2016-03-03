@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="edu.drury.mcs.Dnav.Activity.LookUpSchedule">
 
     <include
@@ -12,12 +14,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <Button
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_course"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="56dp"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Place_holder"
-        android:id="@+id/target_schedule"
-        android:layout_gravity="center" />
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/FAB_icon"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/recycler_view_course"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="edu.drury.mcs.Dnav.JavaClass.ScrollAwareFABBehavior" />
 
 
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

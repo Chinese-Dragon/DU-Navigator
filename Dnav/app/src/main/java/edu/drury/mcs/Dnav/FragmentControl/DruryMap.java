@@ -3,6 +3,7 @@ package edu.drury.mcs.Dnav.FragmentControl;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,15 +26,17 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import edu.drury.mcs.Dnav.JavaClass.Course;
 import edu.drury.mcs.Dnav.JavaClass.Schedule;
+import edu.drury.mcs.Dnav.JavaClass.XMLController;
 import edu.drury.mcs.Dnav.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView.OnItemSelectedListener {
+public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView.OnItemSelectedListener, View.OnClickListener {
 
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
@@ -47,19 +51,18 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
 
     //Spinner dropdown for the schedule filter
     private Spinner spinner_schedule;
-    //Three hard-coded schedules for the sake of Sprint 1
-    private Schedule schedule1 = new Schedule("Schedule1");
-    private Schedule schedule2 = new Schedule("Schedule2");
-    private Schedule schedule3 = new Schedule("Schedule3");
+
     //All the schedules placed into a list so that we can select them
-    private ArrayList<Schedule> scheduleList = new ArrayList<Schedule>();
+    private List<Schedule> scheduleList;
     //default schedule
-    private Schedule currentSchedule = schedule1;
+    private Schedule currentSchedule;
     //display values for the schedules
-    private final String[]schedules = {schedule1.getName(), schedule2.getName(), schedule3.getName()};
+    private String[]schedules;
+
+    private XMLController xml;
 
     //Allows us to associate multiple polylines before we place them
-    private PolylineOptions polylineSet =new PolylineOptions();
+    private PolylineOptions polylineSet;
     //The actual polyline to be placed on the map
     private Polyline realPolyline;
 
@@ -76,6 +79,17 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
         SupportMapFragment fragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         fragment.getMapAsync(this);
 
+        xml = new XMLController(getActivity());
+
+        scheduleList = xml.getSchedules();
+
+        schedules = new String[scheduleList.size()];
+
+        for(int i=0; i<scheduleList.size(); i++)
+        {
+            schedules[i]=scheduleList.get(i).getName();
+        }
+
         spinner_day = (Spinner)getActivity().findViewById(R.id.spinner_day);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, days);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -89,29 +103,11 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
         spinner_schedule.setAdapter(adapter2);
         spinner_schedule.setOnItemSelectedListener(this);
 
-        //add schedules to list of schedules
-        scheduleList.add(schedule1);
-        scheduleList.add(schedule2);
-        scheduleList.add(schedule3);
-/*
-        //Hard-coding all the courses for the first schedule
-        schedule1.addCourse(new Course("C1", "SoftWARE", Course.PEARSON, Course.FRIDAY, "poo","poo", "911","Sigman"));
-        schedule1.addCourse(new Course("C2", "SoftWARE",Course.BURNHAM, Course.MONDAY, "poo" ,"poo", "911","Sigman"));
-        schedule1.addCourse(new Course("C3", "SoftWARE",Course.HAMMONS, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
-        schedule1.addCourse(new Course("C4", "SoftWARE",Course.TSC, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
+        Button but = (Button) getActivity().findViewById(R.id.button_route);
+        but.setOnClickListener(this);
 
-        //Hard-coding all the courses for the second schedule
-        schedule2.addCourse(new Course("C5","SoftWARE", Course.HAMMONS, Course.FRIDAY, "poo","poo", "911","Sigman" ));
-        schedule2.addCourse(new Course("C6","SoftWARE", Course.TSC, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
-        schedule2.addCourse(new Course("C7","SoftWARE", Course.BURNHAM, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
+        polylineSet = new PolylineOptions();
 
-        //Hard-coding all the courses for the third schedule
-        schedule3.addCourse(new Course("C8","SoftWARE",Course.PEARSON, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
-        schedule3.addCourse(new Course("C9","SoftWARE", Course.HAMMONS, Course.WEDNESDAY, "poo" ,"poo", "911","Sigman"));
-        schedule3.addCourse(new Course("C10","SoftWARE", Course.BURNHAM, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
-        schedule3.addCourse(new Course("C11","SoftWARE", Course.TSC, Course.WEDNESDAY, "poo" ,"poo", "911","Sigman"));
-        schedule3.addCourse(new Course("C12","SoftWARE", Course.BURNHAM, Course.FRIDAY, "poo" ,"poo", "911","Sigman"));
-        */
     }
 
     @Override
@@ -128,17 +124,19 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
+
+        mMap = map;
         map.setMyLocationEnabled(true);
         //moves the camera over Drury and zooms in
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(37.221084, -93.285704), 17.0f));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(ini, 17.0f));
 
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them
-        map.addMarker(new MarkerOptions().position(ini).title("Drury"));
-        map.addMarker(new MarkerOptions().position(Course.BURNHAM).title("Burnham Hall"));
-        map.addMarker(new MarkerOptions().position(Course.PEARSON).title("Pearsons Hall"));
-        map.addMarker(new MarkerOptions().position(Course.HAMMONS).title("Hammons School of Architecture"));
-        map.addMarker(new MarkerOptions().position(Course.TSC).title("Trustee Science Center"));
+        map.addMarker(new MarkerOptions().position(ini).title("FSC Circle: Default Assumed Starting Position"));
+        map.addMarker(new MarkerOptions().position(Course.BURNHAMLATLNG).title(Course.BURNHAM));
+        map.addMarker(new MarkerOptions().position(Course.PEARSONLATLNG).title(Course.PEARSONS));
+        map.addMarker(new MarkerOptions().position(Course.HAMMONSLATLNG).title(Course.HSA));
+        map.addMarker(new MarkerOptions().position(Course.TSCLATLNG).title(Course.TSC));
 
     }
 
@@ -154,10 +152,10 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
      *               it is the ROUTE button. There is no relevant information in the route button, so this
      *               parameter goes unused in our implementation of this method.
      */
-    public void onRoute(View parent){
+    public void onClick(View parent) {
 
         //if there is already a polyline....
-        if(realPolyline!=null){
+        if (realPolyline != null) {
             //remove it
             realPolyline.remove();
             //and reset the list of coordinates to a blank slate
@@ -165,10 +163,10 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
         }
 
         //get the courses that meet the filter criteria for the currently selected schedule and day
-        List<Course> courseresult=currentSchedule.getCourseOnDay(currentDay);
+        List<Course> courseresult = currentSchedule.getCourseOnDay(currentDay);
 
         //if the resulting set is empty...
-        if(courseresult.size()==0) {
+        if (courseresult.size() == 0) {
             //simply break out of the method call
             return;
         }
@@ -177,20 +175,22 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
          Lane circle and is labeled as "Drury" currently.*/
         LatLng ini = new LatLng(37.221084, -93.285704);
 
+        Map<String, LatLng> buildingToLatLngMap = Course.generateBuildingToLatLngMap();
+
         //Adds the first line from the initial point to the first building in the course list
-       // polylineSet.add(ini, courseresult.get(0).getLocation()).width(4).color(Color.RED);
+         polylineSet.add(ini, buildingToLatLngMap.get(courseresult.get(0).getLocation())).width(4).color(Color.RED);
 
         //Loops through each course in the course list and adds a polyline between each pair of buildings
-      //  for(int i=0;i<courseresult.size()-1;i++){
-       //     LatLng building=courseresult.get(i).getLocation();
-//            polylineSet.add(building, nextbuilding).width(4).color(Color.RED);
-
+        for (int i = 0; i < courseresult.size() - 1; i++) {
+            LatLng building = buildingToLatLngMap.get(courseresult.get(i).getLocation());
+            LatLng nextbuilding = buildingToLatLngMap.get(courseresult.get(i + 1).getLocation());
+            polylineSet.add(building, nextbuilding).width(4).color(Color.RED);
         }
 
         //Adds the polyline to the map and assigns it to the realPolyline handle so we can remove it later
-    //    realPolyline=mMap.addPolyline(polylineSet);
+        realPolyline=mMap.addPolyline(polylineSet);
 
-  //  }
+    }
 
 
     @Override

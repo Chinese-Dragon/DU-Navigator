@@ -12,19 +12,8 @@
     <string name="title_activity_look_up_schedule">LookUpSchedule</string>
     <string name="action_delete">Delete</string>
     <string name="title_activity_generate_schedule">GenerateSchedule</string>
-    <string-array name="building_names">
-        <item>Burnham</item>
-        <item>Pearsons Hall</item>
-        <item>Olin Library</item>
-        <item>Lay Hall</item>
-        <item>Mabee Center</item>
-        <item>Breech Business School</item>
-        <item>Shewmaker Communication Center</item>
-        <item>Trustee Science Center</item>
-        <item>Hammons School of Architecture</item>
-        <item>Congregational Hall</item>
-        <item>Pool Art Center</item>
-        <item>Law Enforcement Academy</item>
+    <string name="title_activity_generate_course">GenerateCourse</string>
 
-    </string-array>
+    <string name="hello_world">Hello world!</string>
+
 </resources>

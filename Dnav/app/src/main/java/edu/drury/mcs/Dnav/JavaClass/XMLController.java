@@ -59,7 +59,10 @@ public class XMLController {
             String id = list.item(i).getAttributes().getNamedItem("scheduleId").getNodeValue();
             System.out.println(id);
             Node schedName = getChildByName(list.item(i), "name");
-            String name = schedName.getFirstChild().getNodeValue();
+            Node nameNode = schedName.getFirstChild();
+            String name = "";
+            if(nameNode != null)
+                name = nameNode.getNodeValue();
             System.out.println(schedName.getNodeName());
             System.out.println(name);
 
@@ -76,6 +79,7 @@ public class XMLController {
                     String courseID = course.getAttributes().getNamedItem("courseId").getNodeValue();
 
                     String courseName = "";
+                    String courseCode = "";
                     String location = "";
                     String startTime = "";
                     String endTime = "";
@@ -84,6 +88,7 @@ public class XMLController {
                     String prof = "";
 
                     Node courseNameNode = getChildByName(course, "name");
+                    Node courseCodeNode = getChildByName(course, "courseCode");
                     Node locationNode = getChildByName(course, "location");
                     Node startTimeNode = getChildByName(course, "startTime");
                     Node endTimeNode = getChildByName(course, "endTime");
@@ -93,6 +98,8 @@ public class XMLController {
 
                     if(courseNameNode.getFirstChild() != null)
                         courseName = courseNameNode.getFirstChild().getNodeValue();
+                    if(courseCodeNode.getFirstChild() != null)
+                        courseCode = courseCodeNode.getFirstChild().getNodeValue();
                     if(locationNode.getFirstChild() != null)
                         location = locationNode.getFirstChild().getNodeValue();
                     if(startTimeNode.getFirstChild() != null)
@@ -108,6 +115,7 @@ public class XMLController {
 
                     System.out.println(courseID);
                     System.out.println(courseName);
+                    System.out.println(courseCode);
                     System.out.println(location);
                     System.out.println(startTime);
                     System.out.println(endTime);
@@ -115,7 +123,7 @@ public class XMLController {
                     System.out.println(roomNum);
                     System.out.println(prof);
 
-                    Course c = new Course(courseID, courseName, location, days, startTime, endTime, roomNum, prof);
+                    Course c = new Course(courseID, courseName, courseCode, location, days, startTime, endTime, roomNum, prof);
 
                     sched.addCourse(c);
                 }
@@ -153,6 +161,7 @@ public class XMLController {
             course.setAttribute("courseId", courseList.get(i).getID());
 
             Element courseName = xml.createElement("name");
+            Element courseCode = xml.createElement("courseCode");
             Element startTime = xml.createElement("startTime");
             Element endTime = xml.createElement("endTime");
             Element location = xml.createElement("location");
@@ -161,6 +170,7 @@ public class XMLController {
             Element prof = xml.createElement("prof");
 
             courseName.setTextContent(courseList.get(i).getName());
+            courseCode.setTextContent(courseList.get(i).getCode());
             startTime.setTextContent(courseList.get(i).getBeginTime());
             endTime.setTextContent(courseList.get(i).getEndTime());
             location.setTextContent(courseList.get(i).getLocation());
@@ -169,6 +179,7 @@ public class XMLController {
             prof.setTextContent(courseList.get(i).getProf());
 
             course.appendChild(courseName);
+            course.appendChild(courseCode);
             course.appendChild(startTime);
             course.appendChild(endTime);
             course.appendChild(location);
@@ -254,6 +265,7 @@ public class XMLController {
             course.setAttribute("courseId", courseList.get(i).getID());
 
             Element courseName = xml.createElement("name");
+            Element courseCode = xml.createElement("courseCode");
             Element startTime = xml.createElement("startTime");
             Element endTime = xml.createElement("endTime");
             Element location = xml.createElement("location");
@@ -262,6 +274,7 @@ public class XMLController {
             Element prof = xml.createElement("prof");
 
             courseName.setTextContent(courseList.get(i).getName());
+            courseCode.setTextContent(courseList.get(i).getCode());
             startTime.setTextContent(courseList.get(i).getBeginTime());
             endTime.setTextContent(courseList.get(i).getEndTime());
             location.setTextContent(courseList.get(i).getLocation());
@@ -270,6 +283,7 @@ public class XMLController {
             prof.setTextContent(courseList.get(i).getProf());
 
             course.appendChild(courseName);
+            course.appendChild(courseCode);
             course.appendChild(startTime);
             course.appendChild(endTime);
             course.appendChild(location);
@@ -293,8 +307,6 @@ public class XMLController {
      **/
     private void retrieveXML()
     {
-        if(xml==null)
-        {
             try{
                 xmlInputFile = context.getFilesDir() + "/schedules.xml";
                 DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -318,7 +330,6 @@ public class XMLController {
             {
                 e.printStackTrace();
             }
-        }
     }
 
     /**
