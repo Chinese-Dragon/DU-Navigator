@@ -105,7 +105,7 @@ public class MyCourseAdapter extends RecyclerView.Adapter<MyCourseAdapter.mViewH
 
             schedActivity.refresh();
 
-            Toast.makeText(icon.getContext(), "Deleted that shit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(icon.getContext(), data.get(this.getAdapterPosition()).getName() + " was deleted", Toast.LENGTH_SHORT).show();
             return true;
         }
     }

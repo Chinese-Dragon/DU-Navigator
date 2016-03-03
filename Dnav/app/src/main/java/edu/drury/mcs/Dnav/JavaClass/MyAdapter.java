@@ -116,7 +116,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.mViewHolder> {
 
             xmlController.deleteSchedule(currentSche);
 
-            Toast.makeText(icon.getContext(), "Deleted that shit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(icon.getContext(), currentSche.getName() + " was deleted", Toast.LENGTH_SHORT).show();
 
             fragment.refresh();
             return true;
