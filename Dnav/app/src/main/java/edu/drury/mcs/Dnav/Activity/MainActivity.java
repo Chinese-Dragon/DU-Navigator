@@ -13,10 +13,12 @@ import android.view.MenuItem;
 import edu.drury.mcs.Dnav.FragmentControl.DruryMap;
 import edu.drury.mcs.Dnav.FragmentControl.FAQ;
 import edu.drury.mcs.Dnav.FragmentControl.Schedule_Frag;
+import edu.drury.mcs.Dnav.FragmentControl.contact_list_final;
 import edu.drury.mcs.Dnav.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     Toolbar toolbar;
     @Override
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.placeholder, new DruryMap()).commit();
-
 
 
 
@@ -84,13 +85,14 @@ public class MainActivity extends AppCompatActivity
         final int id = item.getItemId();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         //slow down the navigation drawer close speed to optimize user experience
+        assert drawer != null;
         drawer.postDelayed(new Runnable() {
             @Override
             public void run() {
 
                 if (id == R.id.nav_schedule) {
                     // Handle the Schedule_Frag action
-                    toolbar.setTitle("Schedule_Frag");
+                    toolbar.setTitle("DUSchedule");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new Schedule_Frag()).commit();
 
@@ -102,9 +104,14 @@ public class MainActivity extends AppCompatActivity
 
                 } else if (id == R.id.nav_faq) {
                     // Handle the FAQ action
-                    toolbar.setTitle("FAQ");
+                    toolbar.setTitle("DUFAQ");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new FAQ()).commit();
+
+                } else if (id == R.id.nav_contact){
+                    toolbar.setTitle("DUContact");
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.placeholder, new contact_list_final()).commit();
 
                 } else if (id == R.id.nav_about){
 

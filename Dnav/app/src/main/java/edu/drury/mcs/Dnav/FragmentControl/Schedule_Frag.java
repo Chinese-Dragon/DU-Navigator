@@ -26,7 +26,6 @@ public class Schedule_Frag extends Fragment {
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
 
     private View layout;
 
@@ -47,16 +46,8 @@ public class Schedule_Frag extends Fragment {
 
 
         mRecyclerView = (RecyclerView) layout.findViewById(R.id.my_recycler_view);
-
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-        mRecyclerView.setHasFixedSize(true);
-
-
         // use a linear layout manager
-        mLayoutManager = new LinearLayoutManager(getActivity());
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         // specify an adapter
         mAdapter = new MyAdapter(getActivity(), getData(), Schedule_Frag.this);
         mRecyclerView.setAdapter(mAdapter);
@@ -77,16 +68,6 @@ public class Schedule_Frag extends Fragment {
             data.add(current);
         }
 
-/*
-        String[] title = {"Schedule_Frag 1","Schedule_Frag 2","Schedule_Frag 3","Schedule_Frag 4","Schedule_Frag 5","Schedule_Frag 6","Schedule_Frag 7","Schedule_Frag 8","Schedule_Frag 9","Schedule_Frag 10",
-               "Schedule_Frag 11","Schedule_Frag 12","Schedule_Frag 13","Schedule_Frag 14","Schedule_Frag 15","Schedule_Frag 16"};
-        for (String aTitle : title) {
-            ListInfomation current = new ListInfomation();
-            current.title = aTitle;
-            data.add(current);
-        }
-
-*/
         return data;
     }
 
@@ -107,8 +88,7 @@ public class Schedule_Frag extends Fragment {
 
 
         // use a linear layout manager
-        mLayoutManager = new LinearLayoutManager(getActivity());
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         // specify an adapter
         mAdapter = new MyAdapter(getActivity(), getData(), Schedule_Frag.this);

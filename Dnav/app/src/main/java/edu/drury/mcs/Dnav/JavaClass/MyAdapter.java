@@ -1,6 +1,5 @@
 package edu.drury.mcs.Dnav.JavaClass;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +18,7 @@ import java.util.List;
 
 import edu.drury.mcs.Dnav.Activity.LookUpSchedule;
 import edu.drury.mcs.Dnav.FragmentControl.Schedule_Frag;
+import edu.drury.mcs.Dnav.R;
 
 /**
  * Created by mark93 on 2/20/2016.
@@ -28,6 +28,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.mViewHolder> {
 
     public final static String EXTRA_SCHETITLE = "edu.drury.mcs.Dnav.SCHETITLE";
     public final static String EXTRA_SCHEID = "edu.drury.mcs.Dnav.SCHEID";
+    public final static int TEN = 10;
+    public final static int NUM_IMG = 6; //temporary
     private LayoutInflater inflater;
     private Context context;
     private Schedule_Frag fragment;
@@ -44,34 +46,55 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.mViewHolder> {
     @Override
     public mViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = inflater.inflate(edu.drury.mcs.Dnav.R.layout.recycler_view_type, parent, false);
+        View view = inflater.inflate(R.layout.recycler_view_type, parent, false);
         return new mViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(mViewHolder holder, int position) {
+
+        int id = context.getResources().getIdentifier("sche_img_"+Integer.toString(getImgNum(position)),"drawable",context.getPackageName());
+
         ListInfomation current = data.get(position);
         holder.title.setText(current.title);
+        holder.image.setImageResource(id);
     }
 
     @Override
     public int getItemCount() {
         return data.size();
     }
+    //////////////////temporary
+    private static int getImgNum(int position){
+        int result = 0;
+//        int croped = 0;
+//        if(position > 10){
+//            croped = position - (position/TEN)*TEN;
+//            if(croped > NUM_IMG && croped <= 10){
+//                result = croped - NUM_IMG;
+//            }
+//        }else if (position > NUM_IMG && position <=10){
+//            result = position - NUM_IMG;
+//        }else{
+//            result = position;
+//        }
+        result = (position % 6)+1;
+        return result;
+    }
 
 
     class mViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
         TextView title;
-        ImageView icon;
+        ImageView image;
         ImageView info;
 
         public mViewHolder(View itemView) {
             super(itemView);
 
             itemView.setOnClickListener(this);
-            title = (TextView) itemView.findViewById(edu.drury.mcs.Dnav.R.id.listText);
-            icon = (ImageView) itemView.findViewById(edu.drury.mcs.Dnav.R.id.listIcon);
-            info = (ImageView) itemView.findViewById(edu.drury.mcs.Dnav.R.id.listInfo);
+            title = (TextView) itemView.findViewById(R.id.listText);
+            image = (ImageView) itemView.findViewById(R.id.schedule_image);
+            info = (ImageView) itemView.findViewById(R.id.listInfo);
             info.setOnClickListener(this);
 
         }
@@ -116,10 +139,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.mViewHolder> {
 
             xmlController.deleteSchedule(currentSche);
 
-            Toast.makeText(icon.getContext(), currentSche.getName() + " was deleted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(image.getContext(), currentSche.getName() + " was deleted", Toast.LENGTH_SHORT).show();
 
             fragment.refresh();
             return true;
         }
+
     }
 }

@@ -13,12 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
-import edu.drury.mcs.Dnav.FragmentControl.ScheduleName_Dialog;
 import edu.drury.mcs.Dnav.JavaClass.Course;
-import edu.drury.mcs.Dnav.JavaClass.ListInfomation;
 import edu.drury.mcs.Dnav.JavaClass.MyAdapter;
 import edu.drury.mcs.Dnav.JavaClass.MyCourseAdapter;
 import edu.drury.mcs.Dnav.JavaClass.Schedule;
@@ -67,13 +64,11 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
 
 
         FloatingActionButton mFab = (FloatingActionButton) findViewById(edu.drury.mcs.Dnav.R.id.mFab);
+        assert mFab != null;
         mFab.setOnClickListener(this);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view_course);
 
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-        mRecyclerView.setHasFixedSize(true);
 
 
         // use a linear layout manager
@@ -116,7 +111,6 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
         Intent intent = new Intent(this, GenerateCourse.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable(EXTRA_CURRENTSCHE, currentSche);
- //       bundle.putSerializable(EXTRA_SCHEDULEACTIVITY, LookUpSchedule.this);
         intent.putExtras(bundle);
         startActivity(intent);
 

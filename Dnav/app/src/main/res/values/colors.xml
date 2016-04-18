@@ -6,4 +6,7 @@
     <color name="colorBackground">#dedede</color>
     <color name="textColor">#000000</color>
     <color name="FAB_icon">#FFFFFF</color>
+    <color name="colorPhone">#0fa2d7</color>
+    <color name="colorEmail">#636060</color>
+    <color name="colorAddress">#F44336</color>
 </resources>
