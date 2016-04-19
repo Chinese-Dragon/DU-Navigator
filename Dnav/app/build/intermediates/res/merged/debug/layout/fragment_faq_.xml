@@ -1,0 +1,12 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faq_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:layout_marginTop="64dp"
+    tools:context="edu.drury.mcs.Dnav.FragmentControl.FAQ_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+</android.support.v7.widget.RecyclerView>

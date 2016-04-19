@@ -1,0 +1,6 @@
+CHANGED,Y:\Senior Project\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,Y:\Senior Project\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\Activity\MainActivity$override.class
+CHANGED,Y:\Senior Project\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\R$id$override.class
+CHANGED,Y:\Senior Project\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\Activity\GenerateCourse$override.class
+CHANGED,Y:\Senior Project\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\Activity\LookUpSchedule$override.class
+CHANGED,Y:\Senior Project\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\Activity\MainActivity$1$override.class

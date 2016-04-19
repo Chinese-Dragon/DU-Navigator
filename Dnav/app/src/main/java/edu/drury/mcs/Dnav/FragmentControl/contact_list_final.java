@@ -1,6 +1,8 @@
 package edu.drury.mcs.Dnav.FragmentControl;
 
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -26,9 +28,7 @@ public class contact_list_final extends Fragment {
     private RecyclerView.Adapter contactAdapter;
     private View layout;
     DnavDBAdapter dbHelper;
-    private long check_insert_landmarks;
-    private long check_insert_resources;
-    private long check_insert_contacts;
+    private SQLiteDatabase Dnav_db;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,31 +37,46 @@ public class contact_list_final extends Fragment {
         layout = inflater.inflate(R.layout.fragment_contact_list_final, container, false);
 
         dbHelper = new DnavDBAdapter(getActivity());
-
-
-        dbHelper.createDB();
-
+        Dnav_db = dbHelper.createDB();
 
         contactRecyclerView = (RecyclerView) layout.findViewById(R.id.contact_recycler_view);
         contactRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        contactAdapter = new MyContactAdapter(getActivity(), getData());
+        contactAdapter = new MyContactAdapter(getActivity(),getData());
         contactRecyclerView.setAdapter(contactAdapter);
 
         return layout;
     }
 
     public List<resource> getData() {
-        List<resource> data = new ArrayList<>();
-        Contact_Info contact = new Contact_Info();
-        contact.setEmail("yma004@drury.edu");
-        contact.setContact_name("Mark Ma");
-        Contact_Info contact1 = new Contact_Info("Dr.Sigman", "(417)-770-0565"
-                , "ssigman@drury.edu", "Pearsons Hall, Room 107");
-        Contact_Info contact2 = new Contact_Info("Dr.Browning", "(417) 873-7268", "cbrownin@drury.edu", "Pearsons Hall 102");
-        resource resource1 = new resource("Computer Science", "Computer Science Professors", contact, contact2);
-        data.add(resource1);
 
-        return data;
+        String query_resource = "SELECT resource_id, name, description FROM resources";
+        Cursor cursor_resource = Dnav_db.rawQuery(query_resource,null);
+
+        ArrayList<resource> resource_data = new ArrayList<>();
+
+        while(cursor_resource.moveToNext()){
+            String parameterArray[] = new String[1];
+            parameterArray[0] = String.valueOf(cursor_resource.getInt(0));
+            String query_contacts = "SELECT name, phone, email, address FROM contacts WHERE resource_id = ?";
+            Cursor cursor_contacts = Dnav_db.rawQuery(query_contacts,parameterArray);
+            ArrayList<Contact_Info> contact_data = new ArrayList<>();
+            while(cursor_contacts.moveToNext() && cursor_contacts.getPosition() < 2) {
+                contact_data.add(new Contact_Info(cursor_contacts.getString(0), cursor_contacts.getString(1), cursor_contacts.getString(2),
+                        cursor_contacts.getString(3)));
+            }
+
+            if(contact_data.size() == 1) {
+                resource newRes = new resource(cursor_resource.getString(1), cursor_resource.getString(2), contact_data.get(0));
+                resource_data.add(newRes);
+            }
+            if(contact_data.size() >= 2) {
+                resource newRes = new resource(cursor_resource.getString(1), cursor_resource.getString(2), contact_data.get(0), contact_data.get(1));
+                resource_data.add(newRes);
+            }
+
+        }
+
+        return resource_data;
     }
 
     @Override

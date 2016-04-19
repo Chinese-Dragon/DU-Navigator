@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import edu.drury.mcs.Dnav.FragmentControl.DruryMap;
-import edu.drury.mcs.Dnav.FragmentControl.FAQ;
+import edu.drury.mcs.Dnav.FragmentControl.FAQ_Fragment;
 import edu.drury.mcs.Dnav.FragmentControl.Schedule_Frag;
 import edu.drury.mcs.Dnav.FragmentControl.contact_list_final;
 import edu.drury.mcs.Dnav.R;
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity
                     // Handle the FAQ action
                     toolbar.setTitle("DUFAQ");
                     getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.placeholder, new FAQ()).commit();
+                            .replace(R.id.placeholder, new FAQ_Fragment()).commit();
 
                 } else if (id == R.id.nav_contact){
                     toolbar.setTitle("DUContact");

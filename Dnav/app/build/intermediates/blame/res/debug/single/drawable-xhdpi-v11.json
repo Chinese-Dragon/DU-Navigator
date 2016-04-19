@@ -1,22 +1,26 @@
 [
     {
-        "merged": "/Users/mark/Google Drive/Dnav/app/build/intermediates/res/merged/debug/drawable-xhdpi-v11/ic_phone.png",
-        "source": "/Users/mark/Google Drive/Dnav/app/src/main/res/drawable-xhdpi-v11/ic_phone.png"
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_address.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_address.png"
     },
     {
-        "merged": "/Users/mark/Google Drive/Dnav/app/build/intermediates/res/merged/debug/drawable-xhdpi-v11/ic_email.png",
-        "source": "/Users/mark/Google Drive/Dnav/app/src/main/res/drawable-xhdpi-v11/ic_email.png"
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_down.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_down.png"
     },
     {
-        "merged": "/Users/mark/Google Drive/Dnav/app/build/intermediates/res/merged/debug/drawable-xhdpi-v11/ic_up.png",
-        "source": "/Users/mark/Google Drive/Dnav/app/src/main/res/drawable-xhdpi-v11/ic_up.png"
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_up.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_up.png"
     },
     {
-        "merged": "/Users/mark/Google Drive/Dnav/app/build/intermediates/res/merged/debug/drawable-xhdpi-v11/ic_down.png",
-        "source": "/Users/mark/Google Drive/Dnav/app/src/main/res/drawable-xhdpi-v11/ic_down.png"
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_flight.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_flight.png"
     },
     {
-        "merged": "/Users/mark/Google Drive/Dnav/app/build/intermediates/res/merged/debug/drawable-xhdpi-v11/ic_address.png",
-        "source": "/Users/mark/Google Drive/Dnav/app/src/main/res/drawable-xhdpi-v11/ic_address.png"
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_email.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_email.png"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_phone.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_phone.png"
     }
 ]
