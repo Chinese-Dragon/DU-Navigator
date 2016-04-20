@@ -5,6 +5,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -66,11 +67,15 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
     //The actual polyline to be placed on the map
     private Polyline realPolyline;
 
+    private View layout;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_drury_map, container, false);
+
+        layout = inflater.inflate(R.layout.fragment_drury_map, container, false);
+
+        return layout;
     }
 
     @Override
@@ -90,20 +95,20 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
             schedules[i]=scheduleList.get(i).getName();
         }
 
-        spinner_day = (Spinner)getActivity().findViewById(R.id.spinner_day);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, days);
+        spinner_day = (Spinner) layout.findViewById(R.id.spinner_day);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, days);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_day.setAdapter(adapter);
         spinner_day.setOnItemSelectedListener(this);
 
         //initialize schedule spinner
-        spinner_schedule = (Spinner)getActivity().findViewById(R.id.spinner_schedule);
-        ArrayAdapter<String>adapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, schedules);
+        spinner_schedule = (Spinner)layout.findViewById(R.id.spinner_schedule);
+        ArrayAdapter<String>adapter2 = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, schedules);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_schedule.setAdapter(adapter2);
         spinner_schedule.setOnItemSelectedListener(this);
 
-        Button but = (Button) getActivity().findViewById(R.id.button_route);
+        FloatingActionButton but = (FloatingActionButton) layout.findViewById(R.id.button_route);
         but.setOnClickListener(this);
 
         polylineSet = new PolylineOptions();
@@ -112,7 +117,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
 
     @Override
     public void onMapReady(GoogleMap map) {
-        LatLng ini = new LatLng(37.221084, -93.285704);
+        LatLng ini = new LatLng(37.218797, -93.286089);
         //enables location tracking (the little blue blip on the map)
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -122,13 +127,14 @@ public class DruryMap extends Fragment implements OnMapReadyCallback,AdapterView
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
+            map.setMyLocationEnabled(true);
             return;
         }
 
         mMap = map;
         map.setMyLocationEnabled(true);
         //moves the camera over Drury and zooms in
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(ini, 17.0f));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(ini, 15.5f));
 
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them

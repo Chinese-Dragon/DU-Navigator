@@ -4,7 +4,7 @@
     api-level="21"
     density="xhdpi"
     format="7"
-    timestamp="28194975413710" >
+    timestamp="42712426586425" >
 
     <task
         name="javac"
@@ -20,18 +20,13 @@
         duration="0" />
 
     <artifact
-        location="Y:\Senior Project\Dnav\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="Y:\Senior Project\Dnav\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="26482432307561" >
+    <build timestamp="42712426586425" >
         <artifact
             location="Y:\Senior Project\Dnav\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="28194975413710" >
-        <artifact
-            location="Y:\Senior Project\Dnav\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

@@ -2,6 +2,7 @@ package edu.drury.mcs.Dnav.JavaClass;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -25,10 +26,12 @@ import edu.drury.mcs.Dnav.R;
 public class MyFAQAdapter extends RecyclerView.Adapter<MyFAQAdapter.fViewHolder> {
 
     public final static String EXTRA_LINK = "edu.drury.mcs.Dnav.FAQLINK";
+    public final static String EXTRA_FAQNAME = "edu.drury.mcs.Dnav.FAQNAME";
     private Context context;
     private List<FAQ> data = Collections.emptyList();
     private LayoutInflater inflater;
     private String link;
+    private String name;
 
     public  MyFAQAdapter(Context context, List<FAQ> data){
         this.context = context;
@@ -47,13 +50,17 @@ public class MyFAQAdapter extends RecyclerView.Adapter<MyFAQAdapter.fViewHolder>
     public void onBindViewHolder(fViewHolder holder, int position) {
         FAQ current = data.get(position);
         link = current.getFAQ_link();
+        name =current.getFAQ_name();
         holder.FAQ_Name.setText(current.getFAQ_name());
 
         holder.FAQ_CARD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, FAQ_page.class);
-                intent.putExtra(EXTRA_LINK,link);
+                Bundle bundle = new Bundle();
+                bundle.putString(EXTRA_FAQNAME,name);
+                bundle.putString(EXTRA_LINK,link);
+                intent.putExtras(bundle);
                 context.startActivity(intent);
             }
         });

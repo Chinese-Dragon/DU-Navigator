@@ -3,6 +3,7 @@ package edu.drury.mcs.Dnav.Activity;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
@@ -14,12 +15,22 @@ import edu.drury.mcs.Dnav.R;
 
 public class FAQ_page extends AppCompatActivity {
     private String link;
+    private String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq_page);
 
-        link = getIntent().getStringExtra(MyFAQAdapter.EXTRA_LINK);
+        link = getIntent().getExtras().getString(MyFAQAdapter.EXTRA_LINK);
+        name = getIntent().getExtras().getString(MyFAQAdapter.EXTRA_FAQNAME);
+
+        Toolbar toolbar = (Toolbar) findViewById(edu.drury.mcs.Dnav.R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(name);
+
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         WebView mWebView = (WebView) findViewById(R.id.web_view);
         //enable javascript
@@ -45,11 +56,15 @@ public class FAQ_page extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        System.out.println("touched a menu button with id of: " + id);
+        System.out.println("home id is: " + R.id.home);
         //noinspection SimplifiableIfStatement
         if (id == edu.drury.mcs.Dnav.R.id.action_settings) {
             return true;
         } else if (id == R.id.home) {
+            System.out.println("back button before pressed");
             NavUtils.navigateUpFromSameTask(this);
+            System.out.println("back button is pressed");
             return true;
         }
 

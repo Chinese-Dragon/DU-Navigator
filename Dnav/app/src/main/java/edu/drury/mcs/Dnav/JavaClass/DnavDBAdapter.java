@@ -29,7 +29,7 @@ public class DnavDBAdapter {
         private static final String TABLE_RESOURCES = "resources";
         private static final String TABLE_CONTACTS = "contacts";
         private static final String TABLE_LANDMARKS = "landmarks";
-        private static final int DATABASE_VERSION = 6;
+        private static final int DATABASE_VERSION = 7;
         private Context context;
 
         //Landmark table info
@@ -53,14 +53,12 @@ public class DnavDBAdapter {
         private static final String RID = "resource_id";
         private static final String RNAME = "name";
         private static final String RDESCRIPTION = "description";
-        private static final String RROOMNUM = "roomnum";
         private static final String RLANDMARK_ID = "landmark_id";
         private static final String CREATE_TABLE_RESOURCES = "CREATE TABLE " + TABLE_RESOURCES
                 + " ("
                 + RID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + RNAME + " VARCHAR(255) NOT NULL,"
                 + RDESCRIPTION + " VARCHAR(512) NOT NULL,"
-                + RROOMNUM + " INTEGER,"
                 + RLANDMARK_ID + " INTEGER,"
                 + "FOREIGN KEY (" + RLANDMARK_ID + ") REFERENCES " + TABLE_LANDMARKS + " (" + LID + ")"
                 + ");";
@@ -109,7 +107,6 @@ public class DnavDBAdapter {
             ContentValues contentValues = new ContentValues();
             contentValues.put(DnavDBHelper.RNAME, "Greek Life");
             contentValues.put(DnavDBHelper.RDESCRIPTION, "Anything about greek life");
-            contentValues.put(DnavDBHelper.RROOMNUM, 124);
             contentValues.put(DnavDBHelper.RLANDMARK_ID, 1);
             id = db.insert(DnavDBHelper.TABLE_RESOURCES, null, contentValues);
             return id;

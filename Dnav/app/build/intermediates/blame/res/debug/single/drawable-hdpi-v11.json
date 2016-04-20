@@ -12,12 +12,12 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-hdpi-v11\\ic_down.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v11\\ic_flight.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-hdpi-v11\\ic_flight.png"
-    },
-    {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v11\\ic_phone.png",
         "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-hdpi-v11\\ic_phone.png"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v11\\ic_flight.png",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-hdpi-v11\\ic_flight.png"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v11\\ic_address.png",

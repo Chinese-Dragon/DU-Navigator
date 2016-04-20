@@ -9,4 +9,6 @@
     <color name="colorPhone">#0fa2d7</color>
     <color name="colorEmail">#636060</color>
     <color name="colorAddress">#F44336</color>
+    <color name="orange">#ffa11d</color>
+
 </resources>

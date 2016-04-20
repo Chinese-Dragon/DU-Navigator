@@ -28,6 +28,10 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
     {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_dialog_title_material.xml"
     },
@@ -200,16 +204,16 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recycler_view_faq_type.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\recycler_view_faq_type.xml"
-    },
-    {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact_list_final.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_contact_list_final.xml"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recycler_view_faq_type.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\recycler_view_faq_type.xml"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -276,11 +280,11 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_faq_.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_faq_.xml"
-    },
-    {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_faq_.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_faq_.xml"
     }
 ]

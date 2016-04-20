@@ -47,4 +47,9 @@ public class FAQ_Fragment extends Fragment {
         FAQ_data.add(orientation);
         return FAQ_data;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
 }

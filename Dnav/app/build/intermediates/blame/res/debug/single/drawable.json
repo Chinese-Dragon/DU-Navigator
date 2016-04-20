@@ -8,16 +8,12 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\8.4.0\\res\\drawable\\cast_ic_notification_connecting.xml"
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_button.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable\\route_button.xml"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_light.xml"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -36,12 +32,20 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\8.4.0\\res\\drawable\\cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_light.xml"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
@@ -140,12 +144,12 @@
         "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_light.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
-    },
-    {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.xml",
         "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
     },
     {
         "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
