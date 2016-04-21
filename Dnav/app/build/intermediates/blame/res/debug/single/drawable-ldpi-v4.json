@@ -1,46 +1,90 @@
 [
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_today.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_today.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_error.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_error.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_place.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_place.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\youtube.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\youtube.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_error.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_error.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_account_balance.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_account_balance.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_chat.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_chat.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_perm_contact_cal.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_perm_contact_cal.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_account_balance.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_account_balance.png"
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_error.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_error.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/stonechapel.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/stonechapel.png"
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_perm_contact_cal.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_perm_contact_cal.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_info.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_info.png"
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_place.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_place.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/youtube.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/youtube.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_event.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_event.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_delete.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_delete.png"
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\youtube.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\youtube.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_perm_contact_cal.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_perm_contact_cal.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_today.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_today.png"
     },
     {
-        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_event.png",
-        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-ldpi/ic_event.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_place.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_place.png"
+    },
+    {
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_info.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_info.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\stonechapel.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\stonechapel.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_today.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_today.png"
+    },
+    {
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_delete.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_chat.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_chat.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_event.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_event.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_account_balance.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_account_balance.png"
+    },
+    {
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\stonechapel.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\stonechapel.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_info.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_info.png"
+    },
+    {
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_chat.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\April21\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_chat.png"
+    },
+    {
+        "merged": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_delete.png",
+        "source": "C:\\Users\\mark\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-ldpi\\ic_delete.png"
     }
 ]

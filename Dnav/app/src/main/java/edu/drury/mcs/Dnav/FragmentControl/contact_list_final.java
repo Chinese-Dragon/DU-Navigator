@@ -37,7 +37,7 @@ public class contact_list_final extends Fragment {
         layout = inflater.inflate(R.layout.fragment_contact_list_final, container, false);
 
         dbHelper = new DnavDBAdapter(getActivity());
-        Dnav_db = dbHelper.createDB();
+        Dnav_db = dbHelper.getReadOnlyDB();
 
         contactRecyclerView = (RecyclerView) layout.findViewById(R.id.contact_recycler_view);
         contactRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
