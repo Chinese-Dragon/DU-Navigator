@@ -4,29 +4,44 @@
     api-level="21"
     density="xhdpi"
     format="7"
-    timestamp="42712426586425" >
+    timestamp="247840693230363" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="588" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="24" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
     <artifact
-        location="Y:\Senior Project\Dnav\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+        type="DEX" />
 
-    <build timestamp="42712426586425" >
+    <build timestamp="245578770142309" >
         <artifact
-            location="Y:\Senior Project\Dnav\app\build\outputs\apk\app-debug.apk"
+            location="/Users/mark/core-navigator/Dnav/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="246830427701059" >
+        <artifact
+            location="/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="247298054345660" >
+        <artifact
+            location="/Users/mark/core-navigator/Dnav/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="247840693230363" >
+        <artifact
+            location="/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

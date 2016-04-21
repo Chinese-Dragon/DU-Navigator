@@ -1,194 +1,194 @@
 [
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sche_img_1.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\sche_img_1.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/powered_by_google_dark.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/powered_by_google_dark.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_today.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_today.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/stonechapel.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/stonechapel.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sche_img_5.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\sche_img_5.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/sche_img_6.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/sche_img_6.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_today.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_today.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_clear.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/places_ic_clear.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\places_ic_clear.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxxhdpi\\places_ic_clear.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/reuse_48.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/reuse_48.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_account_balance.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_account_balance.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_perm_contact_cal.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_perm_contact_cal.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\youtube.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\youtube.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_clear_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sche_img_6.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\sche_img_6.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\stonechapel.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\stonechapel.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\reuse_48.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\reuse_48.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_event.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_event.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_chat.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_chat.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_perm_contact_cal.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_perm_contact_cal.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/powered_by_google_light.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/powered_by_google_light.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sche_img_3.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\sche_img_3.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_search.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_search.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_search.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_search.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/sche_img_5.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/sche_img_5.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_delete.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_delete.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/youtube.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/youtube.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_error.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_error.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_delete.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_delete.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/sche_img_2.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/sche_img_2.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sche_img_4.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\sche_img_4.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxxhdpi\\powered_by_google_light.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\places_ic_search.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxxhdpi\\places_ic_search.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_account_balance.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_account_balance.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_chat.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_chat.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_info.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_info.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/sche_img_3.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/sche_img_3.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_info.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_info.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/sche_img_1.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/sche_img_1.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_place.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_place.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/sche_img_4.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/sche_img_4.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_dark.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxxhdpi\\powered_by_google_dark.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_search.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/places_ic_search.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_event.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_event.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sche_img_2.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\sche_img_2.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_error.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_error.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_place.png",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/drawable-xxxhdpi/ic_place.png"
     }
 ]

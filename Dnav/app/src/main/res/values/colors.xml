@@ -10,5 +10,7 @@
     <color name="colorEmail">#636060</color>
     <color name="colorAddress">#F44336</color>
     <color name="orange">#ffa11d</color>
+    <color name="searchBox">#9effffff</color>
+    <color name="hintcolor">#b9b9b9</color>
 
 </resources>

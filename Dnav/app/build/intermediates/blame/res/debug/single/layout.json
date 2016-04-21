@@ -1,290 +1,302 @@
 [
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_toolbar.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/app_bar_main.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/app_bar_main.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_controller_material_dialog_b.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/fragment_schedule.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/fragment_schedule.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_item_prediction.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_media_cancel_action.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\spinner_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_look_up_schedule.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\activity_look_up_schedule.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_generate_course.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\activity_generate_course.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_tab_text.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_fragment.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_fragment.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_chooser_dialog.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_chooser_dialog.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_faq_page.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\activity_faq_page.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_drury_map.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_drury_map.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/recycler_view_dialog.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/recycler_view_dialog.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_simple.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_fragment.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_lines.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_icon.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/my_recycler_view_course.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/my_recycler_view_course.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_progress.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_media.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_lines.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/recycler_view_card_type.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/recycler_view_card_type.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_menu_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/building_dialog.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/building_dialog.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_schedule.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_schedule.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\schedulename_dialog.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\schedulename_dialog.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/customized_marker_info.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/customized_marker_info.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_separator.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recycler_view_type.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\recycler_view_type.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_menu_item_action_area.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/fragment_contact_list_final.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/fragment_contact_list_final.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_bottom_sheet_dialog.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_controller_material_dialog_b.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_snackbar_include.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/fragment_faq_.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/fragment_faq_.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_snackbar.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_list_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_list_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media_narrow.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/nav_header_main.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/nav_header_main.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_menu.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_recycler_view_course.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\my_recycler_view_course.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/recycler_view_type.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/recycler_view_type.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_progress.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_item_powered_by_google.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_time.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/activity_generate_course.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/activity_generate_course.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact_list_final.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_contact_list_final.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_list_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recycler_view_faq_type.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\recycler_view_faq_type.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/recycler_view_faq_type.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/recycler_view_faq_type.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_cancel_action.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/schedulename_dialog.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/schedulename_dialog.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_snackbar_include.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_snackbar.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recycler_view_card_type.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\recycler_view_card_type.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_text.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/place_autocomplete_item_prediction.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_item_prediction.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_action.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/spinner_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/spinner_item.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/activity_look_up_schedule.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/activity_look_up_schedule.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/fragment_drury_map.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/fragment_drury_map.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/activity_faq_page.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/activity_faq_page.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_chooser_dialog.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_subheader.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_search_view.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_faq_.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\layout\\fragment_faq_.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/select_dialog_singlechoice_material.xml"
     }
 ]

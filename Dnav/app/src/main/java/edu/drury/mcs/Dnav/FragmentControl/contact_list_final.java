@@ -27,7 +27,7 @@ public class contact_list_final extends Fragment {
     private RecyclerView contactRecyclerView;
     private RecyclerView.Adapter contactAdapter;
     private View layout;
-    DnavDBAdapter dbHelper;
+    private DnavDBAdapter dbHelper;
     private SQLiteDatabase Dnav_db;
 
     @Override
@@ -75,6 +75,7 @@ public class contact_list_final extends Fragment {
             }
 
         }
+
 
         return resource_data;
     }

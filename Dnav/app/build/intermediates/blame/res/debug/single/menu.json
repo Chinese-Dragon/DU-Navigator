@@ -1,14 +1,14 @@
 [
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\menu\\schedule_detail.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\menu\\schedule_detail.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/menu/activity_main_drawer.xml"
     },
     {
-        "merged": "Y:\\Senior Project\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "Y:\\Senior Project\\Dnav\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "/Users/mark/core-navigator/Dnav/app/build/intermediates/res/merged/debug/menu/schedule_detail.xml",
+        "source": "/Users/mark/core-navigator/Dnav/app/src/main/res/menu/schedule_detail.xml"
     }
 ]
