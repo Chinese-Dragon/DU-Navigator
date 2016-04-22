@@ -8,18 +8,21 @@ public class resource {
     private String res_description;
     private Contact_Info res_contact1;
     private Contact_Info res_contact2;
+    private int id;
 
-    public resource(String res_name, String res_description, Contact_Info res_contact1, Contact_Info res_contact2) {
+    public resource(String res_name, String res_description, Contact_Info res_contact1, Contact_Info res_contact2, int id) {
         this.res_name = res_name;
         this.res_description = res_description;
         this.res_contact1 = res_contact1;
         this.res_contact2 = res_contact2;
+        this.id = id;
     }
 
-    public resource(String res_name, String res_description, Contact_Info res_contact1) {
+    public resource(String res_name, String res_description, Contact_Info res_contact1, int id) {
         this.res_name = res_name;
         this.res_description = res_description;
         this.res_contact1 = res_contact1;
+        this.id= id;
     }
 
     //setter
@@ -39,6 +42,10 @@ public class resource {
         return res_contact2;
     }
 
+    public int getId() {
+        return id;
+    }
+
     //getter
     public void setRes_name(String newName) {
         res_name = newName;
@@ -56,4 +63,7 @@ public class resource {
         res_contact2 = newContact;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 }

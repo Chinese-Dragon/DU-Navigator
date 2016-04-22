@@ -48,33 +48,32 @@ public class contact_list_final extends Fragment {
     }
 
     public List<resource> getData() {
+        ArrayList<resource> resource_data = new ArrayList<>();
 
         String query_resource = "SELECT resource_id, name, description FROM resources";
         Cursor cursor_resource = Dnav_db.rawQuery(query_resource,null);
 
-        ArrayList<resource> resource_data = new ArrayList<>();
-
         while(cursor_resource.moveToNext()){
             String parameterArray[] = new String[1];
             parameterArray[0] = String.valueOf(cursor_resource.getInt(0));
-            String query_contacts = "SELECT name, phone, email, address FROM contacts WHERE resource_id = ?";
+            String query_contacts = "SELECT name, phone, email, address, contact_id FROM contacts WHERE resource_id = ?";
             Cursor cursor_contacts = Dnav_db.rawQuery(query_contacts,parameterArray);
             ArrayList<Contact_Info> contact_data = new ArrayList<>();
             while(cursor_contacts.moveToNext() && cursor_contacts.getPosition() < 2) {
-                contact_data.add(new Contact_Info(cursor_contacts.getString(0), cursor_contacts.getString(1), cursor_contacts.getString(2),
-                        cursor_contacts.getString(3)));
-            }
-
-            if(contact_data.size() == 1) {
-                resource newRes = new resource(cursor_resource.getString(1), cursor_resource.getString(2), contact_data.get(0));
-                resource_data.add(newRes);
-            }
-            if(contact_data.size() >= 2) {
-                resource newRes = new resource(cursor_resource.getString(1), cursor_resource.getString(2), contact_data.get(0), contact_data.get(1));
-                resource_data.add(newRes);
-            }
-
+            contact_data.add(new Contact_Info(cursor_contacts.getString(0), cursor_contacts.getString(1), cursor_contacts.getString(2),
+                    cursor_contacts.getString(3),Integer.valueOf(cursor_contacts.getString(4))));
         }
+
+        if(contact_data.size() == 1) {
+            resource newRes = new resource(cursor_resource.getString(1), cursor_resource.getString(2), contact_data.get(0),cursor_resource.getInt(0));
+            resource_data.add(newRes);
+        }
+        if(contact_data.size() >= 2) {
+            resource newRes = new resource(cursor_resource.getString(1), cursor_resource.getString(2), contact_data.get(0), contact_data.get(1),cursor_resource.getInt(0));
+            resource_data.add(newRes);
+        }
+
+    }
 
 
         return resource_data;

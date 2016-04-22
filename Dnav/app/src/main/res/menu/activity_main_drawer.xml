@@ -11,6 +11,10 @@
             android:icon="@drawable/ic_place"
             android:title="CLASS ROUTE" />
         <item
+            android:id="@+id/nav_orientation"
+            android:icon="@drawable/ic_orientation"
+            android:title="ORIENTATION"/>
+        <item
             android:id="@+id/nav_faq"
             android:icon="@drawable/ic_chat"
             android:title="FAQ" />

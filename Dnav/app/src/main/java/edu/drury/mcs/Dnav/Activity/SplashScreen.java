@@ -199,6 +199,8 @@ public class SplashScreen extends AppCompatActivity {
                         String col = columns.next();
                         Object value = tuple.get(col);
 
+                        System.out.println(value);
+
                         if(value instanceof String)
                             columnValues.put(col, (String) value);
                         else if(value instanceof Double)
@@ -206,7 +208,7 @@ public class SplashScreen extends AppCompatActivity {
                         else if(value instanceof Integer)
                             columnValues.put(col, (Integer) value);
                         else
-                            columnValues.put(col, (String) value);
+                            columnValues.putNull(col);
 
 //                        Object value = tuple.get(columns.next());
 //                        if(value instanceof String){

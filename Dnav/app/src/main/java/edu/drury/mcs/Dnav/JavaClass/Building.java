@@ -11,14 +11,19 @@ public class Building {
     private String building_name;
     private String building_info;
     private LatLng location;
+    private int id;
+    private int type;
     private ArrayList<resource> resources_list;
 
-    public Building(String name, String info, LatLng location, ArrayList<resource> resources_list) {
+    public Building(String name, String info, int type, int id,LatLng location, ArrayList<resource> resources_list) {
         this.building_name = name;
         this.building_info = info;
         this.location = location;
+        this.type = type;
+        this.id=id;
         this.resources_list = resources_list;
     }
+
 
     //getters
     public LatLng getLocation() {
@@ -37,6 +42,14 @@ public class Building {
         return resources_list;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public int getType() {
+        return type;
+    }
+
     //setters
     public void setBuilding_info(String building_info) {
         this.building_info = building_info;
@@ -52,6 +65,13 @@ public class Building {
 
     public void setResources_list(ArrayList<resource> resources_list) {
         this.resources_list = resources_list;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 }
 

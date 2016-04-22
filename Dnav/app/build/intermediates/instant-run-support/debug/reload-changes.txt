@@ -1,4 +1,4 @@
-CHANGED,/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/edu/drury/mcs/Dnav/FragmentControl/DruryMap$2$override.class
-CHANGED,/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/edu/drury/mcs/Dnav/FragmentControl/DruryMap$override.class
-CHANGED,/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/edu/drury/mcs/Dnav/FragmentControl/DruryMap$1$override.class
-CHANGED,/Users/mark/core-navigator/Dnav/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,C:\Users\bcummins.DRURY\Documents\April21\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\bcummins.DRURY\Documents\April21\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\FragmentControl\DruryMap$override.class
+CHANGED,C:\Users\bcummins.DRURY\Documents\April21\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\FragmentControl\DruryMap$1$override.class
+CHANGED,C:\Users\bcummins.DRURY\Documents\April21\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\edu\drury\mcs\Dnav\FragmentControl\DruryMap$2$override.class

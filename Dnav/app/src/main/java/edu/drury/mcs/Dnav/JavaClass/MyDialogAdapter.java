@@ -70,6 +70,14 @@ public class MyDialogAdapter extends RecyclerView.Adapter<MyDialogAdapter.sViewH
             holder.service_email1.setVisibility(View.GONE);
         }
 
+        if (cur_res.getRes_contact1().getAddress() != null){
+            holder.contact_address1.setText(cur_res.getRes_contact1().getAddress());
+            Linkify.addLinks(holder.contact_address1,Linkify.MAP_ADDRESSES);
+        }else{
+            holder.service_address1.setVisibility(View.GONE);
+        }
+
+
         if(cur_res.getRes_contact2() == null){
             holder.contact2.setVisibility(View.GONE);
         }else{
@@ -87,6 +95,13 @@ public class MyDialogAdapter extends RecyclerView.Adapter<MyDialogAdapter.sViewH
             }else {
                 holder.service_email2.setVisibility(View.GONE);
             }
+
+            if (cur_res.getRes_contact1().getAddress() != null){
+                holder.contact_address2.setText(cur_res.getRes_contact2().getAddress());
+                Linkify.addLinks(holder.contact_address2,Linkify.MAP_ADDRESSES);
+            }else{
+                holder.service_address2.setVisibility(View.GONE);
+            }
         }
     }
 
@@ -102,12 +117,16 @@ public class MyDialogAdapter extends RecyclerView.Adapter<MyDialogAdapter.sViewH
         private ViewGroup service_phone2;
         private ViewGroup service_email1;
         private ViewGroup service_email2;
+        private ViewGroup service_address1;
+        private ViewGroup service_address2;
 
         //card content
         private TextView service_name;
         private TextView contact_name1;
         private TextView contact_phone1;
         private TextView contact_email1;
+        private TextView contact_address1;
+        private TextView contact_address2;
 
         private TextView contact_name2;
         private TextView contact_phone2;
@@ -124,15 +143,20 @@ public class MyDialogAdapter extends RecyclerView.Adapter<MyDialogAdapter.sViewH
             service_phone2 = (ViewGroup) view.findViewById(R.id.service_phone2);
             service_email1 = (ViewGroup) view.findViewById(R.id.service_email1);
             service_email2 = (ViewGroup) view.findViewById(R.id.service_email2);
+            service_address1 = (ViewGroup) view.findViewById(R.id.service_address1);
+            service_address2 = (ViewGroup) view.findViewById(R.id.service_address2);
+
 
             //card content
             service_name = (TextView) view.findViewById(R.id.service_name);
             contact_name1 = (TextView) view.findViewById(R.id.contactName1);
             contact_phone1 = (TextView) view.findViewById(R.id.sPhone1);
             contact_email1 = (TextView) view.findViewById(R.id.sMail1);
+            contact_address1 = (TextView) view.findViewById(R.id.sAddress1);
             contact_name2 = (TextView) view.findViewById(R.id.contactName2);
             contact_phone2 = (TextView) view.findViewById(R.id.sPhone2);
             contact_email2 = (TextView) view.findViewById(R.id.sMail2);
+            contact_address2 = (TextView) view.findViewById(R.id.sAddress2);
 
             toggle.setOnClickListener(new View.OnClickListener() {
                 @Override

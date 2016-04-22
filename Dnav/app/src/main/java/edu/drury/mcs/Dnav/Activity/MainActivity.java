@@ -12,6 +12,7 @@ import android.view.MenuItem;
 
 import edu.drury.mcs.Dnav.FragmentControl.DruryMap;
 import edu.drury.mcs.Dnav.FragmentControl.FAQ_Fragment;
+import edu.drury.mcs.Dnav.FragmentControl.Orientation;
 import edu.drury.mcs.Dnav.FragmentControl.Schedule_Frag;
 import edu.drury.mcs.Dnav.FragmentControl.contact_list_final;
 import edu.drury.mcs.Dnav.R;
@@ -113,6 +114,10 @@ public class MainActivity extends AppCompatActivity
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new contact_list_final()).commit();
 
+                } else if (id == R.id.nav_orientation){
+                    toolbar.setTitle("ORIENTATION");
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.placeholder, new Orientation()).commit();
                 } else if (id == R.id.nav_about){
 
                 }

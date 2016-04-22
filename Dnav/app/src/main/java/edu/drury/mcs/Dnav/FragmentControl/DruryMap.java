@@ -3,6 +3,7 @@ package edu.drury.mcs.Dnav.FragmentControl;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -38,6 +40,7 @@ import java.util.Map;
 
 import edu.drury.mcs.Dnav.JavaClass.Building;
 import edu.drury.mcs.Dnav.JavaClass.BuildingInfo_Dialog;
+import edu.drury.mcs.Dnav.JavaClass.Contact_Info;
 import edu.drury.mcs.Dnav.JavaClass.Course;
 import edu.drury.mcs.Dnav.JavaClass.DnavDBAdapter;
 import edu.drury.mcs.Dnav.JavaClass.Message;
@@ -53,6 +56,8 @@ import edu.drury.mcs.Dnav.R;
 public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterView.OnItemSelectedListener
         , View.OnClickListener {
 
+    private DnavDBAdapter dbHelper;
+    private SQLiteDatabase Dnav_db;
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
 
@@ -95,11 +100,13 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
         layout = inflater.inflate(R.layout.fragment_drury_map, container, false);
 
+        dbHelper = new DnavDBAdapter(getActivity());
+        Dnav_db = dbHelper.getReadOnlyDB();
 
         data = getData();
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity()
-                , android.R.layout.simple_dropdown_item_1line, getAllBuildingNames(data));
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity()
+                , android.R.layout.simple_dropdown_item_1line,getAllBuildingNames(data));
 
         textView = (AutoCompleteTextView) layout.findViewById(R.id.building_search);
         textView.setAdapter(adapter);
@@ -145,6 +152,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
     @Override
     public void onMapReady(GoogleMap map) {
+        Marker currentMarker = null;
         LatLng ini = new LatLng(37.221064, -93.285694);
         //enables location tracking (the little blue blip on the map)
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -167,7 +175,17 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them
         for (Building i : data) {
-            Marker currentMarker = map.addMarker(new MarkerOptions().position(i.getLocation()).title(i.getBuilding_info()));
+            if(i.getType() == 1) {
+                currentMarker = mMap.addMarker(new MarkerOptions().position(i.getLocation()));
+            }else if(i.getType() == 2){
+                currentMarker = mMap.addMarker(new MarkerOptions()
+                        .position(i.getLocation())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+            }else if(i.getType() == 3){
+                currentMarker = mMap.addMarker(new MarkerOptions()
+                        .position(i.getLocation())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+            }
             markerList.add(currentMarker);
         }
 
@@ -301,10 +319,55 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
     public List<Building> getData() {
         List<Building> building_Data = new ArrayList<>();
-        Building pearson = new Building("Pearson Hall", "Computer Science Building", new LatLng(37.219337, -93.286614), new ArrayList<resource>() );
-        Building FSC = new Building("Findley Student Center (FSC)", "A lot of things in there", new LatLng(37.221070, -93.284853),new ArrayList<resource>() );
-        building_Data.add(pearson);
-        building_Data.add(FSC);
+
+//        String query_building = "SELECT "
+//                + DnavDBAdapter.LID + ", "
+//                + DnavDBAdapter.LNAME + ", "
+//                + DnavDBAdapter.LDESCRIPTION + ", "
+//                + DnavDBAdapter.LTYPE + ", "
+//                + DnavDBAdapter.LLAT + ", "
+//                + DnavDBAdapter.LLNG + ", "
+//                + "FROM "
+//                + DnavDBAdapter.TABLE_LANDMARKS;
+
+        String query_building = "select landmark_id, name, description, type, lat, lng from landmarks";
+
+//        String query_resource = "select * from resource";
+//
+//        String query_contact = "select * from contact";
+
+        Cursor cursor_buildings = Dnav_db.rawQuery(query_building,null);
+
+        while(cursor_buildings.moveToNext()){
+            String parameterArray[] = new String[1];
+            parameterArray[0] = String.valueOf(cursor_buildings.getInt(0));
+            String query_resources = "SELECT resource_id, name, description FROM resources WHERE landmark_id = ?";
+            Cursor cursor_resources = Dnav_db.rawQuery(query_resources,parameterArray);
+            ArrayList<resource> resource_data = new ArrayList<>();
+
+            while(cursor_resources.moveToNext()) {
+                String query_contacts = "Select contact_id, name, phone, email, address FROM contacts where resource_id = ?";
+
+                String parameterArray2[] = new String[1];
+                parameterArray2[0] = String.valueOf(cursor_resources.getInt(0));
+
+                Cursor cursor_contacts = Dnav_db.rawQuery(query_contacts, parameterArray2);
+
+                ArrayList<Contact_Info> contact_data = new ArrayList<>();
+                while(cursor_contacts.moveToNext()) {
+                    contact_data.add(new Contact_Info(cursor_contacts.getString(1), cursor_contacts.getString(2), cursor_contacts.getString(3), cursor_contacts.getString(4), cursor_contacts.getInt(0)));
+                }
+
+                if(contact_data.size() == 1) {
+                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0),Integer.valueOf(cursor_resources.getString(0))));
+                }
+                if(contact_data.size() >= 2) {
+                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0), contact_data.get(1),Integer.valueOf(cursor_resources.getString(0))));
+                }
+            }
+            building_Data.add(new Building(cursor_buildings.getString(1), cursor_buildings.getString(2), cursor_buildings.getInt(3), cursor_buildings.getInt(0), new LatLng(cursor_buildings.getDouble(4), cursor_buildings.getDouble(5)), resource_data));
+        }
+
         return building_Data;
     }
 

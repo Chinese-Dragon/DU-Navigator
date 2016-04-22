@@ -49,21 +49,9 @@ public class MyFAQAdapter extends RecyclerView.Adapter<MyFAQAdapter.fViewHolder>
     @Override
     public void onBindViewHolder(fViewHolder holder, int position) {
         FAQ current = data.get(position);
-        link = current.getFAQ_link();
-        name =current.getFAQ_name();
         holder.FAQ_Name.setText(current.getFAQ_name());
 
-        holder.FAQ_CARD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, FAQ_page.class);
-                Bundle bundle = new Bundle();
-                bundle.putString(EXTRA_FAQNAME,name);
-                bundle.putString(EXTRA_LINK,link);
-                intent.putExtras(bundle);
-                context.startActivity(intent);
-            }
-        });
+
 
 
     }
@@ -75,11 +63,25 @@ public class MyFAQAdapter extends RecyclerView.Adapter<MyFAQAdapter.fViewHolder>
 
     class fViewHolder extends RecyclerView.ViewHolder {
         TextView FAQ_Name;
-        CardView FAQ_CARD;
+
         public fViewHolder(View itemView) {
             super(itemView);
-            FAQ_CARD = (CardView) itemView.findViewById(R.id.faq_card);
             FAQ_Name = (TextView) itemView.findViewById(R.id.faq_name);
+
+            FAQ_Name.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    link = data.get(getAdapterPosition()).getFAQ_link();
+                    name = data.get(getAdapterPosition()).getFAQ_name();
+
+                    Intent intent = new Intent(context, FAQ_page.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString(EXTRA_FAQNAME,name);
+                    bundle.putString(EXTRA_LINK,link);
+                    intent.putExtras(bundle);
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
