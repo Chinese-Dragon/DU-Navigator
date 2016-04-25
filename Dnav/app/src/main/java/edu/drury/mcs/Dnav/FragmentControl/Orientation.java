@@ -3,7 +3,6 @@ package edu.drury.mcs.Dnav.FragmentControl;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +25,7 @@ public class Orientation extends Fragment {
         layout = inflater.inflate(R.layout.fragment_orientation, container, false);
 
 
-        WebView mWebView = (WebView) layout.findViewById(R.id.web_view);
+        WebView mWebView = (WebView) layout.findViewById(R.id.orientation);
         //enable javascript
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);

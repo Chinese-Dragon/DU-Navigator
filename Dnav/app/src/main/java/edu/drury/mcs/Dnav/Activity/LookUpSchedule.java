@@ -30,7 +30,6 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     public final static String EXTRA_CURRENTSCHE = "edu.drury.mcs.Dnav.CURRENTSCHE";
-
     private Schedule currentSche;
 
     @Override
@@ -68,15 +67,12 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
         mFab.setOnClickListener(this);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view_course);
-
-
-
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter
-        mAdapter = new MyCourseAdapter(this, currentSche.getCourses(), LookUpSchedule.this, currentSche);
+        mAdapter = new MyCourseAdapter(this, currentSche.getCourses(), LookUpSchedule.this, currentSche, getFragmentManager());
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -154,7 +150,7 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
 
 
         // specify an adapter
-        mAdapter = new MyCourseAdapter(this, currentSche.getCourses(), LookUpSchedule.this, currentSche);
+        mAdapter = new MyCourseAdapter(this, currentSche.getCourses(), LookUpSchedule.this, currentSche, getFragmentManager());
         mRecyclerView.setAdapter(mAdapter);
 
         List<Course> list = currentSche.getCourses();

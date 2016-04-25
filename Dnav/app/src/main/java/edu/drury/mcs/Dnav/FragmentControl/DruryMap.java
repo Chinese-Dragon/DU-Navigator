@@ -16,11 +16,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -34,7 +31,6 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -43,7 +39,6 @@ import edu.drury.mcs.Dnav.JavaClass.BuildingInfo_Dialog;
 import edu.drury.mcs.Dnav.JavaClass.Contact_Info;
 import edu.drury.mcs.Dnav.JavaClass.Course;
 import edu.drury.mcs.Dnav.JavaClass.DnavDBAdapter;
-import edu.drury.mcs.Dnav.JavaClass.Message;
 import edu.drury.mcs.Dnav.JavaClass.MyInfoWindowAdapter;
 import edu.drury.mcs.Dnav.JavaClass.Schedule;
 import edu.drury.mcs.Dnav.JavaClass.XMLController;
@@ -56,11 +51,13 @@ import edu.drury.mcs.Dnav.R;
 public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterView.OnItemSelectedListener
         , View.OnClickListener {
 
+    public static final String[] LOC = {"","Others", "Parking Lots", "Outdoor Fields"};
     private DnavDBAdapter dbHelper;
     private SQLiteDatabase Dnav_db;
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
 
+    private Spinner marker_selection;
     //Spinner dropdown for the day filter
     private Spinner spinner_day;
     //default value
@@ -106,7 +103,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
         data = getData();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity()
-                , android.R.layout.simple_dropdown_item_1line,getAllBuildingNames(data));
+                , android.R.layout.simple_dropdown_item_1line, getAllBuildingNames(data));
 
         textView = (AutoCompleteTextView) layout.findViewById(R.id.building_search);
         textView.setAdapter(adapter);
@@ -130,6 +127,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
             schedules[i] = scheduleList.get(i).getName();
         }
 
+
         spinner_day = (Spinner) layout.findViewById(R.id.spinner_day);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, days);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -152,8 +150,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
     @Override
     public void onMapReady(GoogleMap map) {
-        Marker currentMarker = null;
-        LatLng ini = new LatLng(37.221064, -93.285694);
+        LatLng ini = new LatLng(37.219499, -93.286032);
         //enables location tracking (the little blue blip on the map)
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -163,39 +160,31 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            map.setMyLocationEnabled(true);
             return;
         }
 
         mMap = map;
         mMap.setMyLocationEnabled(true);
         //moves the camera over Drury and zooms in
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ini, 15.5f));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ini, 15.75f));
+        //Adds Markers that point to various buildings that are currently used in the routing process and labels them
+        setUpMarkers(data);
 
-        //Adds Markers that point to various buildings that are currently used in the routing process and labels them
-        //Adds Markers that point to various buildings that are currently used in the routing process and labels them
-        for (Building i : data) {
-            if(i.getType() == 1) {
-                currentMarker = mMap.addMarker(new MarkerOptions().position(i.getLocation()));
-            }else if(i.getType() == 2){
-                currentMarker = mMap.addMarker(new MarkerOptions()
-                        .position(i.getLocation())
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-            }else if(i.getType() == 3){
-                currentMarker = mMap.addMarker(new MarkerOptions()
-                        .position(i.getLocation())
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
-            }
-            markerList.add(currentMarker);
-        }
+        //setup spinner for user to chose building markers
+        marker_selection = (Spinner) layout.findViewById(R.id.marker_selection);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, LOC);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        marker_selection.setAdapter(adapter3);
+        marker_selection.setOnItemSelectedListener(this);
+
 
         mMap.setInfoWindowAdapter(new MyInfoWindowAdapter(getActivity(), data));
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
                 //show user a dialog box with info they need
-                BuildingInfo_Dialog dialog = new BuildingInfo_Dialog(marker,data);
-                dialog.show(getActivity().getSupportFragmentManager(),"show Building Info");
+                BuildingInfo_Dialog dialog = new BuildingInfo_Dialog(marker, data);
+                dialog.show(getActivity().getSupportFragmentManager(), "show Building Info");
                 marker.hideInfoWindow();
 
             }
@@ -211,10 +200,13 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
                 if (building_loc != null) {
                     mMap.animateCamera(CameraUpdateFactory.newLatLng(building_loc));
                     getFocusedMarker(building_loc, markerList).showInfoWindow();
-
                 }
+
+                textView.setText("");
             }
         });
+
+
     }
 
 
@@ -285,6 +277,9 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
         else if (parent.getId() == spinner_schedule.getId()) {
             //set the currentSchedule to their selection
             currentSchedule = scheduleList.get(position);
+        } else if (parent.getId() == marker_selection.getId()) {
+            hideAllMarkers(markerList);
+            showSelectedMarkers(markerList,position);
         }
     }
 
@@ -297,55 +292,23 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
     }
 
-//    /**
-//     * Getter for the current day. Not used in current iteration of App because there is only one
-//     * activity, but may be useful later if we end up splitting up the functionalities.
-//     *
-//     * @return
-//     */
-//    public String getCurrentDay() {
-//        return currentDay;
-//    }
-//
-//    /**
-//     * Getter for the current schedule. Not used in current iteration of App because there is only one
-//     * activity, but may be useful later if we end up splitting up the functionalities.
-//     *
-//     * @return
-//     */
-//    public Schedule getCurrentSchedule() {
-//        return currentSchedule;
-//    }
 
     public List<Building> getData() {
         List<Building> building_Data = new ArrayList<>();
 
-//        String query_building = "SELECT "
-//                + DnavDBAdapter.LID + ", "
-//                + DnavDBAdapter.LNAME + ", "
-//                + DnavDBAdapter.LDESCRIPTION + ", "
-//                + DnavDBAdapter.LTYPE + ", "
-//                + DnavDBAdapter.LLAT + ", "
-//                + DnavDBAdapter.LLNG + ", "
-//                + "FROM "
-//                + DnavDBAdapter.TABLE_LANDMARKS;
 
         String query_building = "select landmark_id, name, description, type, lat, lng from landmarks";
 
-//        String query_resource = "select * from resource";
-//
-//        String query_contact = "select * from contact";
+        Cursor cursor_buildings = Dnav_db.rawQuery(query_building, null);
 
-        Cursor cursor_buildings = Dnav_db.rawQuery(query_building,null);
-
-        while(cursor_buildings.moveToNext()){
+        while (cursor_buildings.moveToNext()) {
             String parameterArray[] = new String[1];
             parameterArray[0] = String.valueOf(cursor_buildings.getInt(0));
             String query_resources = "SELECT resource_id, name, description FROM resources WHERE landmark_id = ?";
-            Cursor cursor_resources = Dnav_db.rawQuery(query_resources,parameterArray);
+            Cursor cursor_resources = Dnav_db.rawQuery(query_resources, parameterArray);
             ArrayList<resource> resource_data = new ArrayList<>();
 
-            while(cursor_resources.moveToNext()) {
+            while (cursor_resources.moveToNext()) {
                 String query_contacts = "Select contact_id, name, phone, email, address FROM contacts where resource_id = ?";
 
                 String parameterArray2[] = new String[1];
@@ -354,15 +317,15 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
                 Cursor cursor_contacts = Dnav_db.rawQuery(query_contacts, parameterArray2);
 
                 ArrayList<Contact_Info> contact_data = new ArrayList<>();
-                while(cursor_contacts.moveToNext()) {
+                while (cursor_contacts.moveToNext()) {
                     contact_data.add(new Contact_Info(cursor_contacts.getString(1), cursor_contacts.getString(2), cursor_contacts.getString(3), cursor_contacts.getString(4), cursor_contacts.getInt(0)));
                 }
 
-                if(contact_data.size() == 1) {
-                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0),Integer.valueOf(cursor_resources.getString(0))));
+                if (contact_data.size() == 1) {
+                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0), Integer.valueOf(cursor_resources.getString(0))));
                 }
-                if(contact_data.size() >= 2) {
-                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0), contact_data.get(1),Integer.valueOf(cursor_resources.getString(0))));
+                if (contact_data.size() >= 2) {
+                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0), contact_data.get(1), Integer.valueOf(cursor_resources.getString(0))));
                 }
             }
             building_Data.add(new Building(cursor_buildings.getString(1), cursor_buildings.getString(2), cursor_buildings.getInt(3), cursor_buildings.getInt(0), new LatLng(cursor_buildings.getDouble(4), cursor_buildings.getDouble(5)), resource_data));
@@ -399,5 +362,43 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
         return marker;
     }
 
+    public void setUpMarkers(List<Building> data) {
+        Marker currentMarker = null;
+        //Adds Markers that point to various buildings that are currently used in the routing process and labels them
+        for (Building i : data) {
+            if (i.getType() == 1) {
+                currentMarker = mMap.addMarker(new MarkerOptions().position(i.getLocation())
+                        .title("1"));
+                currentMarker.setVisible(false);
+            } else if (i.getType() == 2) {
+                currentMarker = mMap.addMarker(new MarkerOptions()
+                        .position(i.getLocation())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
+                        .title("2"));
+                currentMarker.setVisible(false);
+            } else if (i.getType() == 3) {
+                currentMarker = mMap.addMarker(new MarkerOptions()
+                        .position(i.getLocation())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
+                        .title("3"));
+                currentMarker.setVisible(false);
+            }
+            markerList.add(currentMarker);
+        }
+    }
+
+    public void showSelectedMarkers(List<Marker> markerList, int type) {
+        for (Marker i :markerList){
+            if(i.getTitle().equals(Integer.toString(type))){
+                i.setVisible(true);
+            }
+        }
+    }
+
+    public void hideAllMarkers(List<Marker> markerList) {
+        for (Marker i : markerList) {
+            i.setVisible(false);
+        }
+    }
 
 }

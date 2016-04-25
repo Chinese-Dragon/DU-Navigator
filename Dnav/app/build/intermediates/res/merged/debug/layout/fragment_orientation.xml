@@ -5,9 +5,13 @@
     tools:context="edu.drury.mcs.Dnav.FragmentControl.Orientation">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <WebView
+        android:id="@+id/orientation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="56dp">
+
+    </WebView>
 
 </FrameLayout>

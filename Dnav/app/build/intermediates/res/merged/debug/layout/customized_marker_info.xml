@@ -23,8 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="5dp"
-            android:text="Show More"
+            android:padding="10dp"
+            android:text="Show Details"
             android:textSize="15dp"
             android:visibility="visible">
 
