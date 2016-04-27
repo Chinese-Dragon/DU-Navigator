@@ -58,8 +58,12 @@
         </activity>
 
         <activity
+            android:screenOrientation="portrait"
             android:name=".Activity.GenerateCourse"
             android:label="@string/title_activity_generate_course">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.drury.mcs.Dnav.Activity.MainActivity" />
         </activity>
 
         <activity android:name=".Activity.FAQ_page"
@@ -69,7 +73,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.drury.mcs.Dnav.Activity.MainActivity" />
-
         </activity>
     </application>
 

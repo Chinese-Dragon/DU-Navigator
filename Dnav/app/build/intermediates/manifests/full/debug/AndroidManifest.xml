@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="17"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -71,7 +71,11 @@
         </activity>
         <activity
             android:name="edu.drury.mcs.Dnav.Activity.GenerateCourse"
-            android:label="@string/title_activity_generate_course" >
+            android:label="@string/title_activity_generate_course"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.drury.mcs.Dnav.Activity.MainActivity" />
         </activity>
         <activity
             android:name="edu.drury.mcs.Dnav.Activity.FAQ_page"

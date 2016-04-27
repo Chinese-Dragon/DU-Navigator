@@ -67,12 +67,16 @@ public class CourseDetailDialog extends DialogFragment {
             start_time.setText(current_course.getBeginTime());
         } else {
             to.setText("");
+            start_time.setText("");
+            end_time.setText("");
         }
 
         if (current_course.getEndTime() != null && !current_course.getEndTime().equals("")) {
             end_time.setText(current_course.getEndTime());
         } else {
             to.setText("");
+            start_time.setText("");
+            end_time.setText("");
         }
 
         if (current_course.getRoomNum() != null ) {
