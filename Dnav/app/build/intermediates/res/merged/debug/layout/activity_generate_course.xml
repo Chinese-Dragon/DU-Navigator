@@ -9,6 +9,7 @@
     tools:context="edu.drury.mcs.Dnav.Activity.LookUpSchedule">
 
     <include
+        android:id="@+id/bar"
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -18,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="56dp">
+        android:layout_below="@+id/bar">
 
         <TextView
             android:id="@+id/TextViewTitle"

@@ -4,42 +4,29 @@
     api-level="21"
     density="mdpi"
     format="7"
-    timestamp="972455652282917"
-    verifier="COMPATIBLE" >
+    timestamp="1044224785482507" >
 
     <task
         name="javac"
-        duration="1003" />
+        duration="934" />
     <task
         name="instant-run-dex"
-        duration="500" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="28" />
+        duration="646" />
     <task
         name="verifier"
-        duration="6" />
+        duration="58" />
 
     <artifact
-        location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="972123641675015" >
+    <build timestamp="1044224785482507" >
         <artifact
             location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="972420158276113" >
-        <artifact
-            location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="972455652282917"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

@@ -12,8 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.android.gms.maps.model.Marker;
-
 import java.util.Random;
 
 import edu.drury.mcs.Dnav.Activity.GenerateCourse;
@@ -80,7 +78,6 @@ public class ScheduleName_Dialog extends DialogFragment  {
 
         return builder.create();
     }
-
 
 
 }

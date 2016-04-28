@@ -57,5 +57,8 @@ public class BuildingInfo_Dialog extends DialogFragment {
         return builder.create();
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
 }

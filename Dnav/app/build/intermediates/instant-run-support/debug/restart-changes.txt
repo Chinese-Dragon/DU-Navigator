@@ -1,3 +1,0 @@
-CHANGED,C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\edu\drury\mcs\Dnav\FragmentControl\DruryMap$2.class
-CHANGED,C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\edu\drury\mcs\Dnav\FragmentControl\DruryMap$1.class
-CHANGED,C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\transforms\instantRun\debug\folders\1\5\main\edu\drury\mcs\Dnav\FragmentControl\DruryMap.class
