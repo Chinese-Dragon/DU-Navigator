@@ -28,6 +28,10 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-hdpi\\youtube.png"
     },
     {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\geo_fence_24.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-hdpi\\geo_fence_24.png"
+    },
+    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
@@ -176,12 +180,12 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pause_light.png",
-        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-hdpi\\ic_pause_light.png"
-    },
-    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_place.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-hdpi\\ic_place.png"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pause_light.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-hdpi\\ic_pause_light.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
@@ -364,6 +368,10 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\reuse_48_white.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-hdpi\\reuse_48_white.png"
+    },
+    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -412,12 +420,12 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_1.png",
-        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\8.4.0\\res\\drawable-hdpi\\cast_ic_notification_1.png"
-    },
-    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_medium_off_client.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-hdpi\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_1.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\8.4.0\\res\\drawable-hdpi\\cast_ic_notification_1.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",

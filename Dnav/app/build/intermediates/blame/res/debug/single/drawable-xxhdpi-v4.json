@@ -68,6 +68,10 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\geo_fence_24.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxhdpi\\geo_fence_24.png"
+    },
+    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-xxhdpi\\ic_plusone_tall_off_client.png"
     },
@@ -124,12 +128,12 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_img_6.png",
-        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxhdpi\\sche_img_6.png"
-    },
-    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_img_6.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxhdpi\\sche_img_6.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_dark.png",
@@ -426,6 +430,10 @@
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\reuse_48_white.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxhdpi\\reuse_48_white.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",

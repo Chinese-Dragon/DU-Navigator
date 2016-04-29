@@ -129,14 +129,14 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
 
         spinner_day = (Spinner) layout.findViewById(R.id.spinner_day);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, days);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item, days);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_day.setAdapter(adapter);
         spinner_day.setOnItemSelectedListener(this);
 
         //initialize schedule spinner
         spinner_schedule = (Spinner) layout.findViewById(R.id.spinner_schedule);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, schedules);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, schedules);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_schedule.setAdapter(adapter2);
         spinner_schedule.setOnItemSelectedListener(this);
@@ -172,7 +172,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
         //setup spinner for user to chose building markers
         marker_selection = (Spinner) layout.findViewById(R.id.marker_selection);
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, LOC);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, LOC);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         marker_selection.setAdapter(adapter3);
         marker_selection.setOnItemSelectedListener(this);

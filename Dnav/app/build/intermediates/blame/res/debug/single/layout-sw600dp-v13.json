@@ -4,12 +4,12 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_look_up_schedule.xml"
     },
     {
-        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_schedule.xml",
-        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_schedule.xml"
-    },
-    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_drury_map.xml",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_drury_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_schedule.xml",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_schedule.xml"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_faq_.xml",

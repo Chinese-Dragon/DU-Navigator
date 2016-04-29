@@ -90,11 +90,15 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        System.out.println("touched a menu button with id of: " + id);
+        System.out.println("home id is: " + R.id.home);
         //noinspection SimplifiableIfStatement
         if (id == edu.drury.mcs.Dnav.R.id.action_settings) {
             return true;
         } else if (id == R.id.home) {
+            System.out.println("back button before pressed");
             NavUtils.navigateUpFromSameTask(this);
+            System.out.println("back button is pressed");
             return true;
         }
 

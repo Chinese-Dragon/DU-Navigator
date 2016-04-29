@@ -2,31 +2,39 @@
 <instant-run
     abi="x86"
     api-level="21"
-    density="mdpi"
+    density="xhdpi"
     format="7"
-    timestamp="1044224785482507" >
+    timestamp="1140067692980752"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="934" />
+        duration="1015" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="482" />
     <task
         name="instant-run-transform"
-        duration="646" />
+        duration="26" />
     <task
         name="verifier"
-        duration="58" />
+        duration="10" />
 
     <artifact
-        location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="1044224785482507" >
+    <build timestamp="1139331415029413" >
         <artifact
             location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="1140067692980752"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

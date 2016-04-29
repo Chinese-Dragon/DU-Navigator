@@ -4,73 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="64dp"
+    android:paddingTop="56dp"
     android:weightSum="1"
     tools:context="edu.drury.mcs.Dnav.FragmentControl.DruryMap">
 
     <!-- TODO: Update blank fragment layout -->
 
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/marker_card"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="40dp"
-        app:cardBackgroundColor="@color/searchBox"
-        app:cardCornerRadius="5dp">
-
-        <Spinner
-            android:id="@+id/marker_selection"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:spinnerMode="dropdown">
-        </Spinner>
-
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/search_card"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        app:cardBackgroundColor="@color/searchBox"
-        app:cardCornerRadius="5dp">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <AutoCompleteTextView
-                android:id="@+id/building_search"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:ems="14"
-                android:hint="Search Drury Buildings"
-                android:imeOptions="actionSearch"
-                android:inputType="textAutoComplete|textAutoCorrect|text"
-                android:paddingLeft="15dp"
-                android:textColorHint="@color/hintcolor">
-
-                <requestFocus />
-            </AutoCompleteTextView>
-
-            <ImageView
-                android:id="@+id/searchButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingRight="10dp"
-                android:src="@drawable/ic_search" />
-
-        </LinearLayout>
-
-
-    </android.support.v7.widget.CardView>
 
 
 
@@ -80,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <LinearLayout
@@ -107,9 +47,7 @@
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/button_route"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp"
-            android:layout_weight="0.03"
+            android:layout_height="51dp"
             android:elevation="0dp"
             android:src="@android:drawable/ic_menu_directions"
             app:fabSize="normal" />
@@ -124,6 +62,58 @@
             android:spinnerMode="dialog" />
 
     </LinearLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/searchBox">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/marker_selection"
+                android:layout_width="60dp"
+                android:layout_height="38dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center">
+            </Spinner>
+
+            <AutoCompleteTextView
+                android:id="@+id/building_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:ems="15"
+                android:hint="Search Drury Buildings"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete|textAutoCorrect|text"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/hintcolor">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_search" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
 
 
 </RelativeLayout>
