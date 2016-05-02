@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.model.Marker;
@@ -28,6 +29,7 @@ public class BuildingInfo_Dialog extends DialogFragment {
     private TextView description;
     private Building current_Building;
     private View buildingInfo_view;
+    private ImageButton cancel;
     private LayoutInflater inflater;
 
     public BuildingInfo_Dialog(Marker marker, List<Building> data) {
@@ -44,6 +46,13 @@ public class BuildingInfo_Dialog extends DialogFragment {
         buildingInfo_view = inflater.inflate(R.layout.building_dialog, null);
         builder.setView(buildingInfo_view);
 
+        cancel = (ImageButton) buildingInfo_view.findViewById(R.id.window_close);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getDialog().cancel();
+            }
+        });
         current_Building = MyInfoWindowAdapter.getSelectedBuilding(current_marker, data);
         description = (TextView) buildingInfo_view.findViewById(R.id.building_description);
         description.setText(current_Building.getBuilding_info());
@@ -53,6 +62,7 @@ public class BuildingInfo_Dialog extends DialogFragment {
         dialogRecycler.setLayoutManager(new LinearLayoutManager(getActivity()));
         dialogAdapter = new MyDialogAdapter(getActivity(), building_services);
         dialogRecycler.setAdapter(dialogAdapter);
+
 
         return builder.create();
     }

@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/building_description"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Description"
-        android:textIsSelectable="true"
-        android:textSize="16sp" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/building_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/window_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_window_48"
+            android:background="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignRight="@+id/building_description" />
+
+    </RelativeLayout>
 
     <View
         android:id="@+id/contact_divider"
@@ -25,7 +41,7 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         android:text="Services"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/service_list"

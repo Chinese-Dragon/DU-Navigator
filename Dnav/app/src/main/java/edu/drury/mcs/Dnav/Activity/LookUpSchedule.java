@@ -30,6 +30,7 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     public final static String EXTRA_CURRENTSCHE = "edu.drury.mcs.Dnav.CURRENTSCHE";
+
     private Schedule currentSche;
 
     @Override
@@ -67,6 +68,9 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
         mFab.setOnClickListener(this);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view_course);
+
+
+
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -90,15 +94,11 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        System.out.println("touched a menu button with id of: " + id);
-        System.out.println("home id is: " + R.id.home);
         //noinspection SimplifiableIfStatement
         if (id == edu.drury.mcs.Dnav.R.id.action_settings) {
             return true;
         } else if (id == R.id.home) {
-            System.out.println("back button before pressed");
             NavUtils.navigateUpFromSameTask(this);
-            System.out.println("back button is pressed");
             return true;
         }
 
@@ -168,3 +168,4 @@ public class LookUpSchedule extends AppCompatActivity implements View.OnClickLis
 
     }
 }
+

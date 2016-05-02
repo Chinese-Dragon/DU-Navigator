@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="21"
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="1140067692980752"
-    verifier="COMPATIBLE" >
+    timestamp="1391258863797101" >
 
     <task
         name="javac"
-        duration="1015" />
+        duration="1052" />
     <task
         name="instant-run-dex"
-        duration="482" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="1831" />
     <task
         name="verifier"
-        duration="10" />
+        duration="629" />
 
     <artifact
-        location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="1139331415029413" >
+    <build timestamp="1391258863797101" >
         <artifact
             location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="1140067692980752"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

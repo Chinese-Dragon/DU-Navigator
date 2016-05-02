@@ -3,7 +3,7 @@
     <color name="colorPrimary">#F44336</color>
     <color name="colorPrimaryDark">#D32F2F</color>
     <color name="colorAccent">#26c7e4</color>
-    <color name="colorBackground">#dedede</color>
+    <color name="colorBackground">#cfcdcd</color>
     <color name="textColor">#000000</color>
     <color name="FAB_icon">#FFFFFF</color>
     <color name="colorPhone">#0fa2d7</color>

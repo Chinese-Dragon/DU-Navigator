@@ -14,190 +14,212 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/bar">
 
-        <TextView
-            android:id="@+id/TextViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Course"
-            android:textColor="#000000"
-            android:textSize="10pt"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"/>
-
-        <EditText
-            android:id="@+id/EditTextCourseName"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Course Name"
-            android:inputType="text"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/TextViewTitle"/>
-
-        <EditText
-            android:id="@+id/EditTextCourseCode"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Course Code"
-            android:inputType="textCapCharacters"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/EditTextCourseName"/>
-
-        <TextView
-            android:id="@+id/TextViewBuilding"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Building"
-            android:textColor="#000000"
-            android:textSize="8pt"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/EditTextCourseCode"/>
-
-        <Spinner
-            android:id="@+id/SpinnerBuilding"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dropdown"
-            android:layout_below="@id/TextViewBuilding"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/EditTextRoomNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Room Number"
-            android:inputType="number"
-            android:textColor="#000000"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/SpinnerBuilding"/>
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Add Course"
+                android:textColor="#000000"
+                android:textSize="10pt" />
 
-        <TextView
-            android:id="@+id/TextViewDays"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Days"
-            android:textColor="#000000"
-            android:textSize="8pt"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/EditTextRoomNumber"/>
+            <EditText
+                android:id="@+id/EditTextCourseName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewTitle"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Course Name"
+                android:inputType="text" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxMonday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Monday"
-            android:layout_below="@id/TextViewDays"
-            android:layout_alignParentLeft="true" />
+            <EditText
+                android:id="@+id/EditTextCourseCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditTextCourseName"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Course Code"
+                android:inputType="textCapCharacters" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxTuesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tuesday"
-            android:layout_below="@id/CheckBoxMonday"
-            android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/TextViewBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditTextCourseCode"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Building"
+                android:textColor="#000000"
+                android:textSize="8pt" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxWednesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wednesday"
-            android:layout_below="@id/TextViewDays"
-            android:layout_toRightOf="@id/CheckBoxMonday"
-            android:layout_marginLeft="24dp"/>
+            <Spinner
+                android:id="@+id/SpinnerBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewBuilding"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:spinnerMode="dropdown" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxThursday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thursday"
-            android:layout_below="@id/CheckBoxWednesday"
-            android:layout_toRightOf="@id/CheckBoxTuesday"
-            android:layout_alignLeft="@id/CheckBoxWednesday"/>
+            <EditText
+                android:id="@+id/EditTextRoomNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SpinnerBuilding"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Room Number"
+                android:inputType="number"
+                android:textColor="#000000" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxFriday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Friday"
-            android:layout_below="@id/CheckBoxThursday"
-            android:layout_alignLeft="@id/CheckBoxWednesday"/>
+            <TextView
+                android:id="@+id/TextViewDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditTextRoomNumber"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Days"
+                android:textColor="#000000"
+                android:textSize="8pt" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxSaturday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Saturday"
-            android:layout_below="@id/TextViewDays"
-            android:layout_toRightOf="@id/CheckBoxWednesday"
-            android:layout_marginLeft="24dp"/>
+            <CheckBox
+                android:id="@+id/CheckBoxMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextViewDays"
+                android:text="Monday" />
 
-        <CheckBox
-            android:id="@+id/CheckBoxSunday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sunday"
-            android:layout_below="@id/CheckBoxSaturday"
-            android:layout_toRightOf="@id/CheckBoxThursday"
-            android:layout_alignLeft="@id/CheckBoxSaturday"/>
+            <CheckBox
+                android:id="@+id/CheckBoxTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/CheckBoxMonday"
+                android:text="Tuesday" />
 
-        <EditText
-            android:id="@+id/EditTextStartTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Start Time"
-            android:inputType="time"
-            android:layout_below="@id/CheckBoxTuesday"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"/>
+            <CheckBox
+                android:id="@+id/CheckBoxWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewDays"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@id/CheckBoxMonday"
+                android:text="Wednesday" />
 
-        <EditText
-            android:id="@+id/EditTextEndTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="End Time"
-            android:inputType="time"
-            android:layout_below="@id/EditTextStartTime"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"/>
+            <CheckBox
+                android:id="@+id/CheckBoxThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/CheckBoxWednesday"
+                android:layout_below="@id/CheckBoxWednesday"
+                android:layout_toRightOf="@id/CheckBoxTuesday"
+                android:text="Thursday" />
 
-        <EditText
-            android:id="@+id/EditTextProfessor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Professor"
-            android:inputType="text"
-            android:layout_below="@id/EditTextEndTime"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"/>
+            <CheckBox
+                android:id="@+id/CheckBoxFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/CheckBoxWednesday"
+                android:layout_below="@id/CheckBoxThursday"
+                android:text="Friday" />
 
-        <Button
-            android:id="@+id/ButtonDone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DONE"
-            android:layout_below="@id/EditTextProfessor" />
+            <CheckBox
+                android:id="@+id/CheckBoxSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewDays"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@id/CheckBoxWednesday"
+                android:text="Saturday" />
 
-        <Button
-            android:id="@+id/ButtonAddCourse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Another Course"
-            android:layout_below="@id/EditTextProfessor"
-            android:layout_toRightOf="@id/ButtonDone"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
+            <CheckBox
+                android:id="@+id/CheckBoxSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/CheckBoxSaturday"
+                android:layout_below="@id/CheckBoxSaturday"
+                android:layout_toRightOf="@id/CheckBoxThursday"
+                android:text="Sunday" />
+
+            <EditText
+                android:id="@+id/EditTextStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CheckBoxTuesday"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Start Time"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/EditTextEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditTextStartTime"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="End Time"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/EditTextProfessor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditTextEndTime"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Professor"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextProfessor"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/ButtonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel" />
+
+
+                <Button
+                    android:id="@+id/ButtonAddCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add Another Course" />
+
+                <Button
+                    android:id="@+id/ButtonDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DONE" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

@@ -5,6 +5,7 @@ package edu.drury.mcs.Dnav.JavaClass;
  */
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -55,10 +56,13 @@ public class Schedule implements Serializable{
      * @return - A list of courses that meet on the given day
      */
     public List<Course> getCourseOnDay(String day){
-        List<Course> dayCourses = getCoursesSortedByTime();
-        for(int i=0; i<courses.size(); i++){
-            Course c = courses.get(i);
-            if((c.getDays()).contains(day)) dayCourses.add(c);
+        List<Course> timeCourses = getCoursesSortedByTime();
+        ArrayList<Course> dayCourses = new ArrayList<>();
+        for(Course c : timeCourses){
+            if((c.getDays()).contains(day)) {
+                dayCourses.add(c);
+                System.out.println("Course "+c.getName()+" is on days: "+c.getDays());
+            }
         }
         return dayCourses;
     }
@@ -82,33 +86,35 @@ public class Schedule implements Serializable{
     }
 
     public List<Course> getCoursesSortedByTime(){
-        ArrayList<Course> sortedList = new ArrayList<Course>();
+        ArrayList<Course> sortedList = (ArrayList<Course>) courses;
 
-        Course[] courseArray = courses.toArray(new Course[courses.size()]);
+        Collections.sort(sortedList);
 
-        // B U B B L E  S O R T  B O Y S
-        for(int i = 0; i<courses.size(); i++)
-        {
-            String strTime = courses.get(i).getBeginTime();
-            Time curTime = new Time(strTime);
-            for(int j=i; j<courses.size(); j++)
-            {
-                String strCompTime = courses.get(j).getBeginTime();
-                Time compTime = new Time(strCompTime);
-                if(curTime.greaterThan(compTime)){
-                    Course curCourse = courses.get(i);
-                    Course compCourse = courses.get(j);
-
-                    courseArray[i] = compCourse;
-                    courseArray[j] = curCourse;
-                }
-            }
-        }
-
-        for(int i = 0; i<courseArray.length; i++)
-        {
-            sortedList.add(courseArray[i]);
-        }
+//        Course[] courseArray = courses.toArray(new Course[courses.size()]);
+//
+//        // B U B B L E  S O R T  B O Y S
+//        for(int i = 0; i<courses.size(); i++)
+//        {
+//            String strTime = courses.get(i).getBeginTime();
+//            Time curTime = new Time(strTime);
+//            for(int j=i; j<courses.size(); j++)
+//            {
+//                String strCompTime = courses.get(j).getBeginTime();
+//                Time compTime = new Time(strCompTime);
+//                if(curTime.greaterThan(compTime)){
+//                    Course curCourse = courses.get(i);
+//                    Course compCourse = courses.get(j);
+//
+//                    courseArray[i] = compCourse;
+//                    courseArray[j] = curCourse;
+//                }
+//            }
+//        }
+//
+//        for(int i = 0; i<courseArray.length; i++)
+//        {
+//            sortedList.add(courseArray[i]);
+//        }
 
         return sortedList;
     }

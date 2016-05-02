@@ -10,14 +10,17 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -31,6 +34,7 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -51,7 +55,7 @@ import edu.drury.mcs.Dnav.R;
 public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterView.OnItemSelectedListener
         , View.OnClickListener {
 
-    public static final String[] LOC = {"","Others", "Parking Lots", "Outdoor Fields"};
+    public static final String[] LOC = {"Just Map","Others", "Parking Lots", "Outdoor Fields"};
     private DnavDBAdapter dbHelper;
     private SQLiteDatabase Dnav_db;
 
@@ -79,14 +83,17 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
     private XMLController xml;
 
     //Allows us to associate multiple polylines before we place them
-    private PolylineOptions polylineSet;
-    //The actual polyline to be placed on the map
-    private Polyline realPolyline;
+    private ArrayList<Polyline> polylineSet = new ArrayList<>();
 
+    //    private PolylineOptions pLineOptions;
+//
+//    //The actual polyline to be placed on the map
+//    private Polyline realPolyline;
     private View layout;
 
     private AutoCompleteTextView textView;
     private List<Building> data;
+    private Map<String, LatLng> buildingToLatLngMap = new HashMap<>();
     private List<Marker> markerList = new ArrayList<>();
 
 
@@ -129,22 +136,20 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
 
         spinner_day = (Spinner) layout.findViewById(R.id.spinner_day);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item, days);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, days);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_day.setAdapter(adapter);
         spinner_day.setOnItemSelectedListener(this);
 
         //initialize schedule spinner
         spinner_schedule = (Spinner) layout.findViewById(R.id.spinner_schedule);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, schedules);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, schedules);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_schedule.setAdapter(adapter2);
         spinner_schedule.setOnItemSelectedListener(this);
 
         FloatingActionButton but = (FloatingActionButton) layout.findViewById(R.id.button_route);
         but.setOnClickListener(this);
-
-        polylineSet = new PolylineOptions();
 
     }
 
@@ -172,7 +177,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
         //setup spinner for user to chose building markers
         marker_selection = (Spinner) layout.findViewById(R.id.marker_selection);
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, LOC);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, LOC);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         marker_selection.setAdapter(adapter3);
         marker_selection.setOnItemSelectedListener(this);
@@ -190,6 +195,27 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
             }
         });
 
+        textView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                if(i == EditorInfo.IME_ACTION_SEARCH){
+                    String building_selected = textView.getText().toString();
+                    LatLng building_loc = getBuildingLatng(building_selected, data);
+
+                    if (building_loc != null) {
+                        mMap.animateCamera(CameraUpdateFactory.newLatLng(building_loc));
+                        getFocusedMarker(building_loc, markerList).setVisible(true);
+                        getFocusedMarker(building_loc, markerList).showInfoWindow();
+                    }
+
+                    textView.setText("");
+                    return true;
+                }
+
+                return false;
+            }
+        });
+
         ImageView searchButton = (ImageView) layout.findViewById(R.id.searchButton);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,6 +225,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
                 if (building_loc != null) {
                     mMap.animateCamera(CameraUpdateFactory.newLatLng(building_loc));
+                    getFocusedMarker(building_loc, markerList).setVisible(true);
                     getFocusedMarker(building_loc, markerList).showInfoWindow();
                 }
 
@@ -223,44 +250,85 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
      */
     public void onClick(View parent) {
 
-        //if there is already a polyline....
-        if (realPolyline != null) {
-            //remove it
-            realPolyline.remove();
-            //and reset the list of coordinates to a blank slate
-            polylineSet = new PolylineOptions();
+        if(mMap != null) {
+
+            resetPolyline();
+            hideAllMarkers(markerList);
+
+            if (currentSchedule != null) {
+
+                //get the courses that meet the filter criteria for the currently selected schedule and day
+                List<Course> courseresult = currentSchedule.getCourseOnDay(currentDay);
+
+                //if the resulting set is empty...
+                if (courseresult.size() == 0) {
+                    //give the user a toast message
+                    System.out.println("There are no courses on the selected day for the given schedule");
+
+
+                } else {//Draw some polylines
+
+                /*This is the Initial Coordinate that exists in all of our polylines. It points to the the Drury
+                Lane circle and is labeled as "Drury" currently.*/
+                    LatLng ini = new LatLng(37.221084, -93.285704);
+
+                    ArrayList<Course> courseErrorList = new ArrayList<>();
+                    ArrayList<LatLng> courseLocationList = new ArrayList<>();
+
+                    for (Course c : courseresult) {
+                        LatLng buildingLocation = buildingToLatLngMap.get(c.getLocation());
+                        if(buildingLocation==null){
+                            courseErrorList.add(c);
+                        }
+                        courseLocationList.add(buildingLocation);
+                        getFocusedMarker(buildingLocation,markerList).setVisible(true);
+                    }
+
+                    if(courseLocationList.contains(null)){
+                        String errorString = currentSchedule.getName()+" has invalid locations in the following courses: ";
+
+                        for(Course errorCourse : courseErrorList){
+                            errorString += errorCourse.getName()+" ";
+                        }
+                        errorString +=". \nPlease remake these courses and select a building from the dropdown.";
+                        System.out.println(errorString);
+                        return;
+                    }
+
+
+                    //Set up polyline options
+                    PolylineOptions polyOptions = new PolylineOptions();
+                    polyOptions.addAll(courseLocationList);
+                    polyOptions.width(4);
+                    polyOptions.color(Color.DKGRAY);
+
+                    //add the polylines to the map and to our list
+                    polylineSet.add(mMap.addPolyline(polyOptions));
+
+
+//                //Loops through each course in the course list and adds a polyline between each pair of buildings
+//                for (int i = 0; i < courseresult.size() - 1; i++) {
+//                    LatLng building = buildingToLatLngMap.get(courseresult.get(i).getLocation());
+//                    LatLng nextbuilding = buildingToLatLngMap.get(courseresult.get(i + 1).getLocation());
+//                    polylineSet.add(mMap.addPolyline(new PolylineOptions().add(building, nextbuilding).width(4).color(Color.DKGRAY)));
+//                }
+//
+//                    //Adds the polyline to the map and assigns it to the realPolyline handle so we can remove it later
+                }
+            }
         }
-
-        //get the courses that meet the filter criteria for the currently selected schedule and day
-        List<Course> courseresult = currentSchedule.getCourseOnDay(currentDay);
-
-        //if the resulting set is empty...
-        if (courseresult.size() == 0) {
-            //simply break out of the method call
-            return;
-        }
-
-        /*This is the Initial Coordinate that exists in all of our polylines. It points to the the Drury
-         Lane circle and is labeled as "Drury" currently.*/
-        LatLng ini = new LatLng(37.221084, -93.285704);
-
-        Map<String, LatLng> buildingToLatLngMap = Course.generateBuildingToLatLngMap();
-
-        //Adds the first line from the initial point to the first building in the course list
-        polylineSet.add(ini, buildingToLatLngMap.get(courseresult.get(0).getLocation())).width(4).color(Color.RED);
-
-        //Loops through each course in the course list and adds a polyline between each pair of buildings
-        for (int i = 0; i < courseresult.size() - 1; i++) {
-            LatLng building = buildingToLatLngMap.get(courseresult.get(i).getLocation());
-            LatLng nextbuilding = buildingToLatLngMap.get(courseresult.get(i + 1).getLocation());
-            polylineSet.add(building, nextbuilding).width(4).color(Color.RED);
-        }
-
-        //Adds the polyline to the map and assigns it to the realPolyline handle so we can remove it later
-        realPolyline = mMap.addPolyline(polylineSet);
-
     }
 
+    private void resetPolyline() {
+        //if there is already a polyline....
+        if (polylineSet.size() > 0) {
+            for(Polyline polyLine : polylineSet){
+                polyLine.remove();
+            }
+
+            polylineSet.clear();
+        }
+    }
 
     @Override
     /**
@@ -296,39 +364,53 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
     public List<Building> getData() {
         List<Building> building_Data = new ArrayList<>();
 
+        String query_building = "SELECT "
+                + DnavDBAdapter.LID + ", "
+                + DnavDBAdapter.LNAME + ", "
+                + DnavDBAdapter.LDESCRIPTION + ", "
+                + DnavDBAdapter.LTYPE + ", "
+                + DnavDBAdapter.LLAT + ", "
+                + DnavDBAdapter.LLNG + " "
+                + "FROM "
+                + DnavDBAdapter.TABLE_LANDMARKS;
 
-        String query_building = "select landmark_id, name, description, type, lat, lng from landmarks";
+//        String query_building = "select landmark_id, name, description, type, lat, lng from landmarks";
 
-        Cursor cursor_buildings = Dnav_db.rawQuery(query_building, null);
+        Cursor cursor_buildings = Dnav_db.rawQuery(query_building,null);
 
-        while (cursor_buildings.moveToNext()) {
+        while(cursor_buildings.moveToNext()){
             String parameterArray[] = new String[1];
-            parameterArray[0] = String.valueOf(cursor_buildings.getInt(0));
+            parameterArray[0] = String.valueOf(cursor_buildings.getInt(cursor_buildings.getColumnIndex(DnavDBAdapter.LID)));
             String query_resources = "SELECT resource_id, name, description FROM resources WHERE landmark_id = ?";
-            Cursor cursor_resources = Dnav_db.rawQuery(query_resources, parameterArray);
+            Cursor cursor_resources = Dnav_db.rawQuery(query_resources,parameterArray);
             ArrayList<resource> resource_data = new ArrayList<>();
 
-            while (cursor_resources.moveToNext()) {
+            while(cursor_resources.moveToNext()) {
                 String query_contacts = "Select contact_id, name, phone, email, address FROM contacts where resource_id = ?";
 
                 String parameterArray2[] = new String[1];
-                parameterArray2[0] = String.valueOf(cursor_resources.getInt(0));
+                parameterArray2[0] = String.valueOf(cursor_resources.getInt(cursor_resources.getColumnIndex(DnavDBAdapter.RID)));
 
                 Cursor cursor_contacts = Dnav_db.rawQuery(query_contacts, parameterArray2);
 
                 ArrayList<Contact_Info> contact_data = new ArrayList<>();
-                while (cursor_contacts.moveToNext()) {
-                    contact_data.add(new Contact_Info(cursor_contacts.getString(1), cursor_contacts.getString(2), cursor_contacts.getString(3), cursor_contacts.getString(4), cursor_contacts.getInt(0)));
+                while(cursor_contacts.moveToNext()) {
+                    contact_data.add(new Contact_Info(cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CNAME)), cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CPHONE)), cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CEMAIL)), cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CADDRESS)), cursor_contacts.getInt(cursor_contacts.getColumnIndex(DnavDBAdapter.CID))));
                 }
 
-                if (contact_data.size() == 1) {
-                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0), Integer.valueOf(cursor_resources.getString(0))));
+                if(contact_data.size() == 1) {
+                    resource_data.add(new resource(cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RNAME)), cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RDESCRIPTION)), contact_data.get(0), cursor_resources.getInt(cursor_resources.getColumnIndex(DnavDBAdapter.RID))));
                 }
-                if (contact_data.size() >= 2) {
-                    resource_data.add(new resource(cursor_resources.getString(1), cursor_resources.getString(2), contact_data.get(0), contact_data.get(1), Integer.valueOf(cursor_resources.getString(0))));
+                if(contact_data.size() >= 2) {
+                    resource_data.add(new resource(cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RNAME)), cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RDESCRIPTION)), contact_data.get(0), contact_data.get(1), cursor_resources.getInt(cursor_resources.getColumnIndex(DnavDBAdapter.RID))));
                 }
             }
-            building_Data.add(new Building(cursor_buildings.getString(1), cursor_buildings.getString(2), cursor_buildings.getInt(3), cursor_buildings.getInt(0), new LatLng(cursor_buildings.getDouble(4), cursor_buildings.getDouble(5)), resource_data));
+
+            LatLng latLng = new LatLng(cursor_buildings.getDouble(4), cursor_buildings.getDouble(5));
+            building_Data.add(new Building(cursor_buildings.getString(cursor_buildings.getColumnIndex(DnavDBAdapter.LNAME)), cursor_buildings.getString(cursor_buildings.getColumnIndex(DnavDBAdapter.LDESCRIPTION)), cursor_buildings.getInt(cursor_buildings.getColumnIndex(DnavDBAdapter.LTYPE)), cursor_buildings.getInt(cursor_buildings.getColumnIndex(DnavDBAdapter.LID)), latLng, resource_data));
+
+            //convenience structure that is used when a course is associated with a location on campus
+            buildingToLatLngMap.put(cursor_buildings.getString(cursor_buildings.getColumnIndex(DnavDBAdapter.LNAME)), latLng);
         }
 
         return building_Data;

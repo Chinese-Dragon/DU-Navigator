@@ -92,16 +92,12 @@
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\geo_fence_24.png",
-        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\geo_fence_24.png"
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_perm_contact_cal.png",
@@ -126,6 +122,10 @@
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_error.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_error.png"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\close_window_96.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\close_window_96.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
@@ -190,6 +190,10 @@
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\stonechapel.png",
         "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\stonechapel.png"
+    },
+    {
+        "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\close_window_48.png",
+        "source": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-xxxhdpi\\close_window_48.png"
     },
     {
         "merged": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",

@@ -12,10 +12,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -88,6 +86,9 @@ public class SplashScreen extends AppCompatActivity {
         }
         cursor.close();
 
+        System.out.println("Attempted url = "+target);
+
+        //NOTE: If there is no need to update any tables, the empty response causes a JSON Exception. However, this does not hamper any functionality currently.
         try {
             URL url = new URL(target);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -104,9 +105,9 @@ public class SplashScreen extends AppCompatActivity {
 
             String responseBody = "";
 
-            while(scanster.hasNext())
+            while(scanster.hasNextLine())
             {
-                responseBody+=scanster.next();
+                responseBody+=scanster.nextLine();
             }
             scanster.close();
             in.close();
@@ -144,6 +145,9 @@ public class SplashScreen extends AppCompatActivity {
         //Get request should be encoded in the future
 
         String target = "http://mcs.drury.edu/dnav/requestupdates.php?";
+
+        target+=DnavDBAdapter.TABLE_TIMESTAMPS+"=0&";
+
         for(String str : tablesToUpdate)
         {
             target += str + "=0";
@@ -169,10 +173,11 @@ public class SplashScreen extends AppCompatActivity {
 
             String responseBody = "";
 
-            while(scanster.hasNext())
+            while(scanster.hasNextLine())
             {
-                responseBody+=scanster.next();
+                responseBody+=scanster.nextLine();
             }
+
             scanster.close();
             in.close();
             conn.disconnect();
@@ -186,12 +191,13 @@ public class SplashScreen extends AppCompatActivity {
             Iterator<String> tableIterator = json.keys();
 
             while(tableIterator.hasNext()){
-                //SQLite lacks a proper upsert, alternative doesn't play nice with foreign key constraints... so I'm doing conditional insertion
                 String table = tableIterator.next();
-//                String query = "INSERT OR REPLACE INTO " + table + " VALUES ";
+
                 JSONArray rows = json.getJSONArray(table);
+
+                db.delete(table, null, null);
                 for(int i = 0; i < rows.length(); i++){
-//                    query+="(";
+
                     JSONObject tuple = (JSONObject) rows.get(i);
                     Iterator<String> columns = tuple.keys();
                     ContentValues columnValues = new ContentValues();
@@ -209,27 +215,10 @@ public class SplashScreen extends AppCompatActivity {
                             columnValues.put(col, (Integer) value);
                         else
                             columnValues.putNull(col);
-
-//                        Object value = tuple.get(columns.next());
-//                        if(value instanceof String){
-//                            query+="\""+ value + "\"";
-//                        }
-//                        else{
-//                            query+=value;
-//                        }
-//
-//                        if(columns.hasNext()){
-//                            query+=", ";
-//                        }
-//                    }
-//                    query+=")";
-//                    if(i<rows.length()-1){
-//                        query+=", ";
                     }
                     db.insertWithOnConflict(table, null , columnValues, SQLiteDatabase.CONFLICT_REPLACE);
                 }
 
-                //db.rawQuery(query, null);
             }
 
         } catch (MalformedURLException e) {

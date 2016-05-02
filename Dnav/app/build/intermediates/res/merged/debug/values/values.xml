@@ -45,7 +45,7 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="colorAccent">#26c7e4</color>
     <color name="colorAddress">#F44336</color>
-    <color name="colorBackground">#dedede</color>
+    <color name="colorBackground">#cfcdcd</color>
     <color name="colorEmail">#636060</color>
     <color name="colorPhone">#0fa2d7</color>
     <color name="colorPrimary">#F44336</color>
@@ -1964,5 +1964,11 @@
         <item name="android:focusable">true</item>
         <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
         <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
+    </style>
+    <style name="floating_action_button">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
     </style>
 </resources>

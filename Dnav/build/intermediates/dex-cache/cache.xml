@@ -75,7 +75,7 @@
         jar="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="6fa26df6567936de12e1edf1a58da4a9388869f5">
+        sha1="77c2f96527db1f32d36d50dbfbc610f5d0f66aeb">
         <dex dex="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b619a34381b3c62a5841b0da40c8e2d73ea2daaf\classes.dex" />
     </item>
     <item
@@ -159,7 +159,7 @@
         jar="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="668475dff7c1bf0863a54e612440e9554a10b856">
+        sha1="1b41dcc2548f4aabaf00ab408c744d171b33b200">
         <dex dex="C:\Users\mark93\Documents\core-navigator\Dnav\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b7126ab63788a3c0e56b1f1af1e9ac1af5fe427b\classes.dex" />
     </item>
     <item

@@ -14269,6 +14269,27 @@
                         "endOffset": 5253
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 1967,
+                    "startColumn": 4,
+                    "startOffset": 158308,
+                    "endLine": 1972,
+                    "endColumn": 12,
+                    "endOffset": 158592
+                },
+                "from": {
+                    "file": "C:\\Users\\mark93\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 951,
+                        "endLine": 30,
+                        "endColumn": 12,
+                        "endOffset": 1240
+                    }
+                }
             }
         ]
     }
