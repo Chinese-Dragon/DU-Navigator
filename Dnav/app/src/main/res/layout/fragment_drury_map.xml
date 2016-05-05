@@ -80,7 +80,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="38dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:focusableInTouchMode="true">
 
             <Spinner
                 android:id="@+id/marker_selection"
@@ -89,13 +90,20 @@
                 android:layout_gravity="center"
                 android:spinnerMode="dropdown"/>
 
+            <LinearLayout
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
             <AutoCompleteTextView
                 android:id="@+id/building_search"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 android:ems="8"
-                android:focusableInTouchMode="true"
+                android:nextFocusUp="@id/building_search"
+                android:nextFocusLeft="@id/building_search"
                 android:hint="Search Buildings"
                 android:imeOptions="actionSearch"
                 android:inputType="textAutoComplete|textAutoCorrect|text"

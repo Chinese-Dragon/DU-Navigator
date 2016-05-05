@@ -1,5 +1,6 @@
 package edu.drury.mcs.Dnav.JavaClass;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -13,6 +14,7 @@ import edu.drury.mcs.Dnav.R;
 /**
  * Created by mark93 on 4/24/2016.
  */
+@SuppressLint("ValidFragment")
 public class CourseDetailDialog extends DialogFragment {
     private Course current_course;
     private LayoutInflater inflater;

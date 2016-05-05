@@ -32,7 +32,7 @@
                 android:paddingTop="8dp"
                 android:text="Add Course"
                 android:textColor="#000000"
-                android:textSize="10pt" />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/EditTextCourseName"
@@ -42,7 +42,8 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:hint="Course Name"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textSize="18sp"/>
 
             <EditText
                 android:id="@+id/EditTextCourseCode"
@@ -52,7 +53,8 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:hint="Course Code"
-                android:inputType="textCapCharacters" />
+                android:inputType="textCapCharacters"
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/TextViewBuilding"
@@ -63,7 +65,7 @@
                 android:layout_marginRight="8dp"
                 android:text="Building"
                 android:textColor="#000000"
-                android:textSize="8pt" />
+                android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/SpinnerBuilding"
@@ -83,7 +85,8 @@
                 android:layout_marginRight="8dp"
                 android:hint="Room Number"
                 android:inputType="number"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/TextViewDays"
@@ -94,7 +97,7 @@
                 android:layout_marginRight="8dp"
                 android:text="Days"
                 android:textColor="#000000"
-                android:textSize="8pt" />
+                android:textSize="20sp" />
 
             <CheckBox
                 android:id="@+id/CheckBoxMonday"
@@ -156,31 +159,67 @@
                 android:layout_toRightOf="@id/CheckBoxThursday"
                 android:text="Sunday" />
 
-            <EditText
-                android:id="@+id/EditTextStartTime"
+            <LinearLayout
+                android:id="@+id/TIME"
+                android:layout_marginLeft="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/CheckBoxTuesday"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:hint="Start Time"
-                android:inputType="time" />
+                android:layout_below="@id/CheckBoxFriday">
 
-            <EditText
-                android:id="@+id/EditTextEndTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/EditTextStartTime"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:hint="End Time"
-                android:inputType="time" />
+                <LinearLayout
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CheckBoxTuesday"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/pick_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                        android:text="Start"/>
+
+                    <TextView
+                        android:id="@+id/EditTextStartTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Start Time"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start">
+
+                    <Button
+                        android:id="@+id/pick_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="end"/>
+                    <TextView
+                        android:id="@+id/EditTextEndTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="End Time"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/EditTextProfessor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/EditTextEndTime"
+                android:layout_below="@id/TIME"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:hint="Professor"
@@ -188,10 +227,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/EditTextProfessor"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_horizontal"
                 android:weightSum="3">
 
                 <Button
@@ -199,7 +240,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Cancel" />
+                    android:text="Cancel"
+                    android:layout_gravity="center"/>
 
 
                 <Button
@@ -207,14 +249,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Add Another Course" />
+                    android:text="Add Another Course"
+                    android:layout_gravity="center"/>
 
                 <Button
                     android:id="@+id/ButtonDone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="DONE" />
+                    android:text="DONE"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>

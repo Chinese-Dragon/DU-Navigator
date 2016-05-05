@@ -349,10 +349,10 @@ public class DnavDBAdapter {
 
             try {
                 System.out.println("onUpgrade called");
-                sqLiteDatabase.execSQL(DROP_TABLE_CONTACTS);
-                sqLiteDatabase.execSQL(DROP_TABLE_LANDMARKS);
-                sqLiteDatabase.execSQL(DROP_TABLE_RESOURCES);
-                onCreate(sqLiteDatabase);
+//                sqLiteDatabase.execSQL(DROP_TABLE_CONTACTS);
+//                sqLiteDatabase.execSQL(DROP_TABLE_LANDMARKS);
+//                sqLiteDatabase.execSQL(DROP_TABLE_RESOURCES);
+//                onCreate(sqLiteDatabase);
             } catch (SQLException e) {
                 System.out.println("" + e);
                 e.printStackTrace();

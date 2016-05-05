@@ -1,5 +1,6 @@
 package edu.drury.mcs.Dnav.Activity;
 
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,13 +11,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.TimePicker;
 
+import java.io.BufferedReader;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Random;
 
 import edu.drury.mcs.Dnav.JavaClass.Course;
@@ -36,7 +42,12 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
     private Button buttonDone;
     private Button buttonAdd;
     private Button buttonCancel;
+    private Button buttonStart;
+    private Button buttonEnd;
+    private TextView startTimeField;
+    private TextView endTimeField;
     private Schedule sched;
+    private int cHour,cMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +72,14 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
 
         buttonCancel = (Button) findViewById(R.id.ButtonCancel);
         buttonCancel.setOnClickListener(this);
+
+        buttonStart = (Button) findViewById(R.id.pick_start);
+        buttonStart.setOnClickListener(this);
+
+        buttonEnd = (Button) findViewById(R.id.pick_end);
+        buttonEnd.setOnClickListener(this);
+
+
 
 
     }
@@ -140,9 +159,9 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
         if (saturday) days += Course.SATURDAY;
 
         // Acquire data from the last few EditText fields
-        final EditText startTimeField = (EditText) findViewById(R.id.EditTextStartTime);
-        String startTime = startTimeField.getText().toString();
-        final EditText endTimeField = (EditText) findViewById(R.id.EditTextEndTime);
+        startTimeField = (TextView) findViewById(R.id.EditTextStartTime);
+        final String startTime = startTimeField.getText().toString();
+        endTimeField = (TextView) findViewById(R.id.EditTextEndTime);
         String endTime = endTimeField.getText().toString();
         final EditText professorField = (EditText) findViewById(R.id.EditTextProfessor);
         String professor = professorField.getText().toString();
@@ -161,9 +180,17 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
             if (!courseName.equals("")) {
                 if (!startTime.equals("")) {
                     if (!endTime.equals("")) {
-                        sched.addCourse(c);
-                        xcont.editSchedule(sched);
-                        finish();
+                        if(monday||tuesday||wednesday||thursday||friday||saturday||sunday){
+                            View fview = getCurrentFocus();
+                            sched.addCourse(c);
+                            xcont.editSchedule(sched);
+
+                            InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
+                            imm.hideSoftInputFromWindow(fview.getWindowToken(), 0);
+                            finish();
+                        }else{
+                            Message.message(this, "Required Course Days");
+                        }
                     } else {
                         Message.message(this, "Required Course End Time");
                     }
@@ -177,6 +204,7 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
             if (!courseName.equals("")) {
                 if (!startTime.equals("")) {
                     if (!endTime.equals("")) {
+                        View fview = getCurrentFocus();
                         sched.addCourse(c);
                         xcont.editSchedule(sched);
                         Intent intent = new Intent(this, GenerateCourse.class);
@@ -184,6 +212,8 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
                         bundle.putSerializable(LookUpSchedule.EXTRA_CURRENTSCHE, sched);
                         intent.putExtras(bundle);
                         startActivity(intent);
+                        InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(fview.getWindowToken(), 0);
                         finish();
                     } else {
                         Message.message(this, "Required Course End Time");
@@ -194,9 +224,93 @@ public class GenerateCourse extends AppCompatActivity implements View.OnClickLis
             } else {
                 Message.message(this, "Required Course Name");
             }
-
         }else if(view.getId() == buttonCancel.getId()){
+            View fview = getCurrentFocus();
+            InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(fview.getWindowToken(), 0);
             finish();
+        }else if (view.getId() == buttonStart.getId()){
+            final Calendar calendar = Calendar.getInstance();
+            cHour = calendar.get(Calendar.HOUR_OF_DAY);
+            cMinute = calendar.get(Calendar.MINUTE);
+
+            TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+                @Override
+                public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                    String hrStr = "";
+                    String minStr = "";
+                    String ampm = "";
+                    if(minute <=9)
+                        minStr = "0"+minute;
+                    else
+                        minStr = ""+minute;
+
+                    if(hourOfDay == 0){
+                        hrStr = "" + 12;
+                        ampm = "AM";
+                    }
+
+                    else if (hourOfDay==12){
+                        hrStr = "" + hourOfDay;
+                        ampm = "PM";
+                    }
+                    else if (hourOfDay>12) {
+                        hrStr = "" + (hourOfDay - 12);
+                        ampm = "PM";
+                    }
+                    else {
+                        hrStr = "" + hourOfDay;
+                        ampm = "AM";
+                    }
+
+                    startTimeField.setText(hrStr + ":" + minStr + " " + ampm);
+
+                }
+            },cHour,cMinute,false);
+
+            timePickerDialog.show();
+
+        }else if(view.getId() == buttonEnd.getId()){
+            final Calendar calendar = Calendar.getInstance();
+            cHour = calendar.get(Calendar.HOUR_OF_DAY);
+            cMinute = calendar.get(Calendar.MINUTE);
+
+            TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+                @Override
+                public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                    String hrStr = "";
+                    String minStr = "";
+                    String ampm = "";
+                    if(minute <=9)
+                        minStr = "0"+minute;
+                    else
+                        minStr = ""+minute;
+
+
+                    if(hourOfDay == 0){
+                        hrStr = "" + 12;
+                        ampm = "AM";
+                    }
+
+                    else if (hourOfDay==12) {
+                        hrStr = "" + hourOfDay;
+                        ampm = "PM";
+                    }
+                    else if (hourOfDay>12) {
+                        hrStr = "" + (hourOfDay - 12);
+                        ampm = "PM";
+                    }
+                    else {
+                        hrStr = "" + hourOfDay;
+                        ampm = "AM";
+                    }
+
+                    endTimeField.setText(hrStr + ":" + minStr + " " + ampm);
+
+                }
+            },cHour,cMinute,false);
+
+            timePickerDialog.show();
         }
     }
 }

@@ -168,15 +168,27 @@ public class Course implements Serializable, Comparable<Course>{
             return 0;
         else{
             Integer thisHour = Integer.parseInt(this.beginTime.split(":")[0]);
+            String thisAMPM = this.beginTime.split(":")[1].split(" ")[1];
             Integer otherHour = Integer.parseInt(course.beginTime.split(":")[0]);
-            if(thisHour.compareTo(otherHour) == 0){
-                Integer thisMin = Integer.parseInt(this.beginTime.split(":")[1]);
-                Integer otherMin = Integer.parseInt(course.beginTime.split(":")[1]);
+            String otherAMPM = course.beginTime.split(":")[1].split(" ")[1];
 
-                return thisMin.compareTo(otherMin);
+            //both are morning or afternoon
+            if(thisAMPM.equals(otherAMPM)) {
+                if (thisHour.compareTo(otherHour) == 0) {
+                    Integer thisMin = Integer.parseInt(this.beginTime.split(":")[1].split(" ")[0]);
+                    Integer otherMin = Integer.parseInt(course.beginTime.split(":")[1].split(" ")[0]);
+
+                    return thisMin.compareTo(otherMin);
+                } else {
+                    return thisHour.compareTo(otherHour);
+                }
             }
-            else{
-                return thisHour.compareTo(otherHour);
+            //morning is less than afternoon
+            else if(thisAMPM.toLowerCase().equals("am") && otherAMPM.toLowerCase().equals("pm")){
+                return -1;
+            }
+            else {
+                return 1;
             }
         }
     }

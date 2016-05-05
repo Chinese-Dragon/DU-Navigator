@@ -1,5 +1,6 @@
 package edu.drury.mcs.Dnav.JavaClass;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
@@ -20,7 +21,9 @@ import edu.drury.mcs.Dnav.R;
 /**
  * Created by mark on 4/20/16.
  */
+@SuppressLint("ValidFragment")
 public class BuildingInfo_Dialog extends DialogFragment {
+
     private Marker current_marker;
     private List<Building> data;
     private List<resource> building_services;
@@ -32,6 +35,7 @@ public class BuildingInfo_Dialog extends DialogFragment {
     private ImageButton cancel;
     private LayoutInflater inflater;
 
+    @SuppressLint("ValidFragment")
     public BuildingInfo_Dialog(Marker marker, List<Building> data) {
         this.current_marker = marker;
         this.data = data;

@@ -35,7 +35,7 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="15dp"
-        android:text="Profesor"
+        android:text="Professor"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
 

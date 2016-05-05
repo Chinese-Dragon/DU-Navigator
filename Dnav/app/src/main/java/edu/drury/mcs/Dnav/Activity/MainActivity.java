@@ -1,7 +1,14 @@
 package edu.drury.mcs.Dnav.Activity;
 
+import android.Manifest;
+import android.app.AlertDialog;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -9,6 +16,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.google.android.gms.location.LocationServices;
 
 import edu.drury.mcs.Dnav.FragmentControl.DruryMap;
 import edu.drury.mcs.Dnav.FragmentControl.FAQ_Fragment;
@@ -18,16 +27,17 @@ import edu.drury.mcs.Dnav.FragmentControl.contact_list_final;
 import edu.drury.mcs.Dnav.R;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-
+        implements NavigationView.OnNavigationItemSelectedListener{
 
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -42,9 +52,8 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.placeholder, new DruryMap()).commit();
 
-
-
     }
+
 
     @Override
     public void onBackPressed() {
@@ -92,32 +101,32 @@ public class MainActivity extends AppCompatActivity
 
                 if (id == R.id.nav_schedule) {
                     // Handle the Schedule_Frag action
-                    toolbar.setTitle("DUSchedule");
+                    toolbar.setTitle("SCHEDULE");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new Schedule_Frag()).commit();
 
                 } else if (id == R.id.nav_map) {
                     // Handle the Map action
-                    toolbar.setTitle("DUMap");
+                    toolbar.setTitle("DRURY MAP");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new DruryMap()).commit();
 
                 } else if (id == R.id.nav_faq) {
                     // Handle the FAQ action
-                    toolbar.setTitle("DUFAQ");
+                    toolbar.setTitle("FAQ");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new FAQ_Fragment()).commit();
 
-                } else if (id == R.id.nav_contact){
-                    toolbar.setTitle("DUContact");
+                } else if (id == R.id.nav_contact) {
+                    toolbar.setTitle("CONTACT");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new contact_list_final()).commit();
 
-                } else if (id == R.id.nav_orientation){
+                } else if (id == R.id.nav_orientation) {
                     toolbar.setTitle("ORIENTATION");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new Orientation()).commit();
-                } else if (id == R.id.nav_about){
+                } else if (id == R.id.nav_about) {
 
                 }
 
@@ -127,7 +136,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
 
 }

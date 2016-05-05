@@ -2,19 +2,25 @@ package edu.drury.mcs.Dnav.FragmentControl;
 
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -53,9 +59,10 @@ import edu.drury.mcs.Dnav.R;
  * A simple {@link Fragment} subclass.
  */
 public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterView.OnItemSelectedListener
-        , View.OnClickListener {
+        , View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {
 
-    public static final String[] LOC = {"Just Map","Others", "Parking Lots", "Outdoor Fields"};
+    private static final int REQUEST_LOCATION = 666;
+    public static final String[] LOC = {"All Buildings", "Buildings", "Parking Lots", "Outdoor Fields", "Residential Building", "Just Map"};
     private DnavDBAdapter dbHelper;
     private SQLiteDatabase Dnav_db;
 
@@ -156,20 +163,18 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
     @Override
     public void onMapReady(GoogleMap map) {
         LatLng ini = new LatLng(37.219499, -93.286032);
+        mMap = map;
         //enables location tracking (the little blue blip on the map)
-        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
+        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+
+        } else {
+            mMap.setMyLocationEnabled(true);
         }
 
-        mMap = map;
-        mMap.setMyLocationEnabled(true);
+        //mMap.setMyLocationEnabled(true);
         //moves the camera over Drury and zooms in
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ini, 15.75f));
         //Adds Markers that point to various buildings that are currently used in the routing process and labels them
@@ -198,7 +203,9 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
         textView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                if(i == EditorInfo.IME_ACTION_SEARCH){
+                View view = getActivity().getCurrentFocus();
+
+                if (i == EditorInfo.IME_ACTION_SEARCH) {
                     String building_selected = textView.getText().toString();
                     LatLng building_loc = getBuildingLatng(building_selected, data);
 
@@ -208,7 +215,12 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
                         getFocusedMarker(building_loc, markerList).showInfoWindow();
                     }
 
+
                     textView.setText("");
+
+                    InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
                     return true;
                 }
 
@@ -220,6 +232,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                View view = getActivity().getCurrentFocus();
                 String building_selected = textView.getText().toString();
                 LatLng building_loc = getBuildingLatng(building_selected, data);
 
@@ -229,6 +242,9 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
                     getFocusedMarker(building_loc, markerList).showInfoWindow();
                 }
 
+
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 textView.setText("");
             }
         });
@@ -236,6 +252,27 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+
+        System.out.println("Request code: " + requestCode + ". Request Location: " + REQUEST_LOCATION);
+        if (requestCode == REQUEST_LOCATION) {
+            System.out.println("User answered: " + grantResults[0] + ". Granted permissions = " + PackageManager.PERMISSION_GRANTED);
+            if (grantResults.length == 1
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // We can now safely use the API we requested access to
+                mMap.setMyLocationEnabled(true);
+
+            } else {
+                // Permission was denied or request was cancelled
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Warning!");
+                builder.setMessage("We need your location permission for the best user experience");
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+        }
+    }
 
     /**
      * Method called when the user hits the "ROUTE" button on the screen. Pulls info from the spinners/dropdowns
@@ -250,7 +287,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
      */
     public void onClick(View parent) {
 
-        if(mMap != null) {
+        if (mMap != null) {
 
             resetPolyline();
             hideAllMarkers(markerList);
@@ -277,20 +314,27 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
                     for (Course c : courseresult) {
                         LatLng buildingLocation = buildingToLatLngMap.get(c.getLocation());
-                        if(buildingLocation==null){
+                        if (buildingLocation == null) {
                             courseErrorList.add(c);
+                        } else {
+                            getFocusedMarker(buildingLocation, markerList).setVisible(true);
                         }
                         courseLocationList.add(buildingLocation);
-                        getFocusedMarker(buildingLocation,markerList).setVisible(true);
                     }
 
-                    if(courseLocationList.contains(null)){
-                        String errorString = currentSchedule.getName()+" has invalid locations in the following courses: ";
+                    if (courseErrorList.size() > 0 || courseLocationList.contains(null)) {
+                        String errorString = "Schedule \"" + currentSchedule.getName() + "\" has invalid locations in the following courses: ";
 
-                        for(Course errorCourse : courseErrorList){
-                            errorString += errorCourse.getName()+" ";
+                        for (Course errorCourse : courseErrorList) {
+                            errorString += "\"" + errorCourse.getName() + "\" ";
                         }
-                        errorString +=". \nPlease remake these courses and select a building from the dropdown.";
+                        errorString += "\n\nPlease delete and remake these courses and then select a location from the dropdown.";
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                        builder.setTitle("Error!");
+                        builder.setMessage(errorString);
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
                         System.out.println(errorString);
                         return;
                     }
@@ -322,7 +366,7 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
     private void resetPolyline() {
         //if there is already a polyline....
         if (polylineSet.size() > 0) {
-            for(Polyline polyLine : polylineSet){
+            for (Polyline polyLine : polylineSet) {
                 polyLine.remove();
             }
 
@@ -346,8 +390,17 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
             //set the currentSchedule to their selection
             currentSchedule = scheduleList.get(position);
         } else if (parent.getId() == marker_selection.getId()) {
-            hideAllMarkers(markerList);
-            showSelectedMarkers(markerList,position);
+
+            if (position == 0) {
+                hideAllMarkers(markerList);
+                resetPolyline();
+                ShowAllMarkers(markerList);
+            } else {
+                hideAllMarkers(markerList);
+                resetPolyline();
+                showSelectedMarkers(markerList, position);
+            }
+
         }
     }
 
@@ -376,16 +429,16 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
 
 //        String query_building = "select landmark_id, name, description, type, lat, lng from landmarks";
 
-        Cursor cursor_buildings = Dnav_db.rawQuery(query_building,null);
+        Cursor cursor_buildings = Dnav_db.rawQuery(query_building, null);
 
-        while(cursor_buildings.moveToNext()){
+        while (cursor_buildings.moveToNext()) {
             String parameterArray[] = new String[1];
             parameterArray[0] = String.valueOf(cursor_buildings.getInt(cursor_buildings.getColumnIndex(DnavDBAdapter.LID)));
             String query_resources = "SELECT resource_id, name, description FROM resources WHERE landmark_id = ?";
-            Cursor cursor_resources = Dnav_db.rawQuery(query_resources,parameterArray);
+            Cursor cursor_resources = Dnav_db.rawQuery(query_resources, parameterArray);
             ArrayList<resource> resource_data = new ArrayList<>();
 
-            while(cursor_resources.moveToNext()) {
+            while (cursor_resources.moveToNext()) {
                 String query_contacts = "Select contact_id, name, phone, email, address FROM contacts where resource_id = ?";
 
                 String parameterArray2[] = new String[1];
@@ -394,14 +447,14 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
                 Cursor cursor_contacts = Dnav_db.rawQuery(query_contacts, parameterArray2);
 
                 ArrayList<Contact_Info> contact_data = new ArrayList<>();
-                while(cursor_contacts.moveToNext()) {
+                while (cursor_contacts.moveToNext()) {
                     contact_data.add(new Contact_Info(cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CNAME)), cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CPHONE)), cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CEMAIL)), cursor_contacts.getString(cursor_contacts.getColumnIndex(DnavDBAdapter.CADDRESS)), cursor_contacts.getInt(cursor_contacts.getColumnIndex(DnavDBAdapter.CID))));
                 }
 
-                if(contact_data.size() == 1) {
+                if (contact_data.size() == 1) {
                     resource_data.add(new resource(cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RNAME)), cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RDESCRIPTION)), contact_data.get(0), cursor_resources.getInt(cursor_resources.getColumnIndex(DnavDBAdapter.RID))));
                 }
-                if(contact_data.size() >= 2) {
+                if (contact_data.size() >= 2) {
                     resource_data.add(new resource(cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RNAME)), cursor_resources.getString(cursor_resources.getColumnIndex(DnavDBAdapter.RDESCRIPTION)), contact_data.get(0), contact_data.get(1), cursor_resources.getInt(cursor_resources.getColumnIndex(DnavDBAdapter.RID))));
                 }
             }
@@ -464,14 +517,19 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                         .title("3"));
                 currentMarker.setVisible(false);
+            } else if (i.getType() == 4) {
+                currentMarker = mMap.addMarker(new MarkerOptions()
+                        .position(i.getLocation())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET))
+                        .title("4"));
             }
             markerList.add(currentMarker);
         }
     }
 
     public void showSelectedMarkers(List<Marker> markerList, int type) {
-        for (Marker i :markerList){
-            if(i.getTitle().equals(Integer.toString(type))){
+        for (Marker i : markerList) {
+            if (i.getTitle().equals(Integer.toString(type))) {
                 i.setVisible(true);
             }
         }
@@ -480,6 +538,12 @@ public class DruryMap extends Fragment implements OnMapReadyCallback, AdapterVie
     public void hideAllMarkers(List<Marker> markerList) {
         for (Marker i : markerList) {
             i.setVisible(false);
+        }
+    }
+
+    public void ShowAllMarkers(List<Marker> markerList) {
+        for (Marker i : markerList) {
+            i.setVisible(true);
         }
     }
 
