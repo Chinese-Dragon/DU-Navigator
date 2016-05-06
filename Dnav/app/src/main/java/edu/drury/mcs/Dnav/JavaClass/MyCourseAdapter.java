@@ -1,8 +1,7 @@
 package edu.drury.mcs.Dnav.JavaClass;
 
+import android.app.FragmentManager;
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -11,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.Collections;
@@ -30,25 +28,35 @@ public class MyCourseAdapter extends RecyclerView.Adapter<MyCourseAdapter.mViewH
     private LookUpSchedule schedActivity;
     List<Course> data = Collections.emptyList();
     private Schedule schedule;
+    private FragmentManager fragmentManager;
 
-    public MyCourseAdapter(Context context, List<Course> data, LookUpSchedule schedActivity, Schedule sched) {
+    public MyCourseAdapter(Context context, List<Course> data, LookUpSchedule schedActivity, Schedule sched, FragmentManager manager) {
         this.context = context;
         inflater = LayoutInflater.from(context);
         this.data = data;
         this.schedActivity = schedActivity;
         this.schedule = sched;
+        this.fragmentManager = manager;
     }
 
     @Override
-    public MyCourseAdapter.mViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public mViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.my_recycler_view_course, parent, false);
         return new mViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(mViewHolder holder, int position) {
+    public void onBindViewHolder(mViewHolder holder, final int position) {
         Course currentCourse = data.get(position);
         holder.title.setText(currentCourse.getName());
+        holder.title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Course selected_Course = data.get(position);
+                CourseDetailDialog dialog= new CourseDetailDialog(selected_Course);
+                dialog.show(fragmentManager, "show Building Info");
+            }
+        });
     }
 
 
@@ -59,38 +67,24 @@ public class MyCourseAdapter extends RecyclerView.Adapter<MyCourseAdapter.mViewH
 
     class mViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
         TextView title;
-        ImageView icon;
         ImageView info;
 
-        public mViewHolder(View itemView) {
+        public mViewHolder(final View itemView) {
             super(itemView);
+            title = (TextView) itemView.findViewById(R.id.course_name);
+            info = (ImageView) itemView.findViewById(R.id.course_Delete);
 
-            itemView.setOnClickListener(this);
-            title = (TextView) itemView.findViewById(edu.drury.mcs.Dnav.R.id.listText);
-            icon = (ImageView) itemView.findViewById(edu.drury.mcs.Dnav.R.id.listIcon);
-            info = (ImageView) itemView.findViewById(edu.drury.mcs.Dnav.R.id.listInfo);
             info.setOnClickListener(this);
+
 
         }
 
         @Override
         public void onClick(View view) {
-            if (view == info) {
                 PopupMenu popup = new PopupMenu(view.getContext(), view);
                 popup.inflate(edu.drury.mcs.Dnav.R.menu.schedule_detail);
                 popup.setOnMenuItemClickListener(this);
                 popup.show();
-
-            } else {
-                String id = data.get(this.getAdapterPosition()).getID();
-                String title = data.get(this.getAdapterPosition()).getName();
-//                Intent intent = new Intent(context, LookUpSchedule.class);
-//                Bundle mBundle = new Bundle();
-//                mBundle.putString(EXTRA_SCHETITLE, title);
-//                mBundle.putString(EXTRA_SCHEID, id);
-//                intent.putExtra(EXTRA_SCHETITLE, title);
-//                context.startActivity(intent);
-            }
         }
 
 
@@ -105,7 +99,6 @@ public class MyCourseAdapter extends RecyclerView.Adapter<MyCourseAdapter.mViewH
 
             schedActivity.refresh();
 
-            Toast.makeText(icon.getContext(), data.get(this.getAdapterPosition()).getName() + " was deleted", Toast.LENGTH_SHORT).show();
             return true;
         }
     }

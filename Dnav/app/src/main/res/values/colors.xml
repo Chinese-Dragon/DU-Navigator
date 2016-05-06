@@ -3,7 +3,14 @@
     <color name="colorPrimary">#F44336</color>
     <color name="colorPrimaryDark">#D32F2F</color>
     <color name="colorAccent">#26c7e4</color>
-    <color name="colorBackground">#dedede</color>
+    <color name="colorBackground">#cfcdcd</color>
     <color name="textColor">#000000</color>
     <color name="FAB_icon">#FFFFFF</color>
+    <color name="colorPhone">#0fa2d7</color>
+    <color name="colorEmail">#636060</color>
+    <color name="colorAddress">#F44336</color>
+    <color name="orange">#ffa11d</color>
+    <color name="searchBox">#9effffff</color>
+    <color name="hintcolor">#b9b9b9</color>
+
 </resources>

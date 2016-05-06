@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -46,6 +47,8 @@ public class ScheduleName_Dialog extends DialogFragment  {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 ScheduleName_Dialog.this.getDialog().cancel();
             }
         });
@@ -67,7 +70,6 @@ public class ScheduleName_Dialog extends DialogFragment  {
                 Bundle mBundle = new Bundle();
                 mBundle.putSerializable(EXTRA_CURRENTSCHE, sched);
                 intent.putExtras(mBundle);
-
                 ScheduleName_Dialog.this.getDialog().cancel();
                 startActivity(intent);
 
@@ -78,7 +80,6 @@ public class ScheduleName_Dialog extends DialogFragment  {
 
         return builder.create();
     }
-
 
 
 }

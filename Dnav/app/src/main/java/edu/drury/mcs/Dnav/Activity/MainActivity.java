@@ -1,7 +1,14 @@
 package edu.drury.mcs.Dnav.Activity;
 
+import android.Manifest;
+import android.app.AlertDialog;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,15 +17,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.location.LocationServices;
+
+import edu.drury.mcs.Dnav.FragmentControl.AboutPage;
 import edu.drury.mcs.Dnav.FragmentControl.DruryMap;
-import edu.drury.mcs.Dnav.FragmentControl.FAQ;
+import edu.drury.mcs.Dnav.FragmentControl.FAQ_Fragment;
+import edu.drury.mcs.Dnav.FragmentControl.Orientation;
 import edu.drury.mcs.Dnav.FragmentControl.Schedule_Frag;
+import edu.drury.mcs.Dnav.FragmentControl.contact_list_final;
 import edu.drury.mcs.Dnav.R;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener{
 
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +53,8 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.placeholder, new DruryMap()).commit();
 
-
-
-
     }
+
 
     @Override
     public void onBackPressed() {
@@ -84,19 +95,20 @@ public class MainActivity extends AppCompatActivity
         final int id = item.getItemId();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         //slow down the navigation drawer close speed to optimize user experience
+        assert drawer != null;
         drawer.postDelayed(new Runnable() {
             @Override
             public void run() {
 
                 if (id == R.id.nav_schedule) {
                     // Handle the Schedule_Frag action
-                    toolbar.setTitle("Schedule_Frag");
+                    toolbar.setTitle("SCHEDULE");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new Schedule_Frag()).commit();
 
                 } else if (id == R.id.nav_map) {
                     // Handle the Map action
-                    toolbar.setTitle("DUMap");
+                    toolbar.setTitle("DRURY MAP");
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new DruryMap()).commit();
 
@@ -104,10 +116,21 @@ public class MainActivity extends AppCompatActivity
                     // Handle the FAQ action
                     toolbar.setTitle("FAQ");
                     getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.placeholder, new FAQ()).commit();
+                            .replace(R.id.placeholder, new FAQ_Fragment()).commit();
 
-                } else if (id == R.id.nav_about){
+                } else if (id == R.id.nav_contact) {
+                    toolbar.setTitle("CONTACT");
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.placeholder, new contact_list_final()).commit();
 
+                } else if (id == R.id.nav_orientation) {
+                    toolbar.setTitle("ORIENTATION");
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.placeholder, new Orientation()).commit();
+                } else if (id == R.id.nav_about) {
+                    toolbar.setTitle("ABOUT");
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.placeholder, new AboutPage()).commit();
                 }
 
             }
@@ -116,7 +139,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
 
 }

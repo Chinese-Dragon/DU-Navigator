@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.drury.mcs.Dnav" >
+    package="edu.drury.mcs.Dnav">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,13 +18,15 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".Activity.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -40,24 +42,42 @@
             android:name=".Activity.LookUpSchedule"
             android:label="@string/title_activity_look_up_schedule"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.drury.mcs.Dnav.Activity.MainActivity" />
         </activity>
+
         <activity
             android:name=".Activity.SplashScreen"
             android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme" >
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
+            android:screenOrientation="portrait"
             android:name=".Activity.GenerateCourse"
-            android:label="@string/title_activity_generate_course" >
+            android:label="@string/title_activity_generate_course"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.drury.mcs.Dnav.Activity.MainActivity" />
+        </activity>
+
+        <activity android:name=".Activity.FAQ_page"
+            android:label="FAQ_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.drury.mcs.Dnav.Activity.MainActivity" />
         </activity>
     </application>
 
