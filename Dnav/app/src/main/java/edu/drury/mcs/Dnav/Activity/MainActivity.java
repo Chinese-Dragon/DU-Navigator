@@ -19,6 +19,7 @@ import android.view.MenuItem;
 
 import com.google.android.gms.location.LocationServices;
 
+import edu.drury.mcs.Dnav.FragmentControl.AboutPage;
 import edu.drury.mcs.Dnav.FragmentControl.DruryMap;
 import edu.drury.mcs.Dnav.FragmentControl.FAQ_Fragment;
 import edu.drury.mcs.Dnav.FragmentControl.Orientation;
@@ -127,7 +128,9 @@ public class MainActivity extends AppCompatActivity
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.placeholder, new Orientation()).commit();
                 } else if (id == R.id.nav_about) {
-
+                    toolbar.setTitle("ABOUT");
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.placeholder, new AboutPage()).commit();
                 }
 
             }
