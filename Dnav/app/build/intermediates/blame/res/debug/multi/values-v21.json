@@ -1702,8 +1702,29 @@
                     "startLine": 252,
                     "startColumn": 4,
                     "startOffset": 18258,
+                    "endLine": 254,
+                    "endColumn": 12,
+                    "endOffset": 18415
+                },
+                "from": {
+                    "file": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 621,
+                        "endLine": 15,
+                        "endColumn": 12,
+                        "endOffset": 780
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 255,
+                    "startColumn": 4,
+                    "startOffset": 18420,
                     "endColumn": 121,
-                    "endOffset": 18375
+                    "endOffset": 18537
                 },
                 "from": {
                     "file": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\8.4.0\\res\\values-v21\\appinvite_styles.xml",
@@ -1718,22 +1739,22 @@
             },
             {
                 "to": {
-                    "startLine": 253,
+                    "startLine": 256,
                     "startColumn": 4,
-                    "startOffset": 18380,
-                    "endLine": 255,
+                    "startOffset": 18542,
+                    "endLine": 258,
                     "endColumn": 12,
-                    "endOffset": 18485
+                    "endOffset": 18647
                 },
                 "from": {
                     "file": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 621,
-                        "endLine": 15,
+                        "startOffset": 788,
+                        "endLine": 19,
                         "endColumn": 12,
-                        "endOffset": 728
+                        "endOffset": 895
                     }
                 }
             }
