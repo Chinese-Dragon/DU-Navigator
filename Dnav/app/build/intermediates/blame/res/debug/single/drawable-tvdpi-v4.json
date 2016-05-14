@@ -1,190 +1,190 @@
 [
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_today.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_today.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\youtube.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\youtube.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\youtube.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\youtube.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_event.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_event.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_event.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_event.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_standard_off_client.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_today.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_today.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_small_off_client.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_chat.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_chat.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_medium_off_client.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_perm_contact_cal.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_perm_contact_cal.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_account_balance.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_account_balance.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_account_balance.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_account_balance.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_info.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_info.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_place.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_place.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_small_off_client.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_error.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_error.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_chat.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_chat.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_perm_contact_cal.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_perm_contact_cal.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_tall_off_client.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_delete.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_delete.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_error.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_error.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.4.0\\res\\drawable-tvdpi\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_focused.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_delete.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_delete.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_info.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_info.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_place.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\drawable-tvdpi\\ic_place.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png"
     }
 ]

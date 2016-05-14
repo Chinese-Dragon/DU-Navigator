@@ -1,78 +1,78 @@
 [
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\course_detail_dialog.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\course_detail_dialog.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_faq_type.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_faq_type.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\nav_header_main.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\nav_header_main.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\activity_generate_course.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_generate_course.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_orientation.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_orientation.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_type.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_type.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_about_page.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_about_page.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_about_page.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_about_page.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\activity_faq_page.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_faq_page.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_dialog.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_card_type.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_card_type.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\my_recycler_view_course.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\my_recycler_view_course.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_schedule.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_schedule.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\activity_look_up_schedule.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_look_up_schedule.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_orientation.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_orientation.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\nav_header_main.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\nav_header_main.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_dialog.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_dialog.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\building_dialog.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\building_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\activity_look_up_schedule.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_look_up_schedule.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_faq_.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_faq_.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\customized_marker_info.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\customized_marker_info.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_type.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_type.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_contact_list_final.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_contact_list_final.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_schedule.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_schedule.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_faq_type.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_faq_type.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_drury_map.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_drury_map.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_faq_.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_faq_.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\customized_marker_info.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\customized_marker_info.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_drury_map.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_drury_map.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\activity_generate_course.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_generate_course.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\building_dialog.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\building_dialog.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\fragment_contact_list_final.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\fragment_contact_list_final.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\my_recycler_view_course.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\my_recycler_view_course.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\recycler_view_card_type.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\recycler_view_card_type.xml"
     },
     {
-        "merged": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\activity_faq_page.xml",
-        "source": "C:\\Users\\yma004\\Documents\\core-navigator\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\activity_faq_page.xml"
+        "merged": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\course_detail_dialog.xml",
+        "source": "C:\\Users\\bcummins.DRURY\\Documents\\Final_Release\\Dnav\\app\\src\\main\\res\\layout-sw600dp\\course_detail_dialog.xml"
     }
 ]

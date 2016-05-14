@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:weightSum="1"
+    tools:context="edu.drury.mcs.Dnav.FragmentControl.DruryMap">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+
+            android:id="@+id/spinner_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:contextClickable="true"
+            android:paddingLeft="15dp"
+            android:spinnerMode="dropdown" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_route"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:elevation="0dp"
+            android:src="@android:drawable/ic_menu_directions"
+            app:fabSize="normal"
+            style="@style/floating_action_button"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner_schedule"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/searchBox">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/marker_selection"
+                android:layout_width="60dp"
+                android:layout_height="38dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center">
+            </Spinner>
+
+            <AutoCompleteTextView
+                android:id="@+id/building_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:ems="15"
+                android:hint="Search Drury Buildings"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete|textAutoCorrect|text"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/hintcolor">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_search" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
